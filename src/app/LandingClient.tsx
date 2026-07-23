@@ -80,15 +80,6 @@ export default function LandingClient() {
         </div>
       </section>
 
-      {/* hero image band */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
-        <div className="aspect-video rounded-xl border border-[#e2ddd3] bg-gradient-to-br from-white via-[#f4f2ee] to-white flex items-center justify-center">
-          <p className="text-[#a49c8a] text-sm uppercase tracking-widest">
-            [ imagen / vídeo de la comunidad próximamente ]
-          </p>
-        </div>
-      </section>
-
       {/* stats bar */}
       <section className="border-y border-[#e2ddd3] bg-white/55 backdrop-blur-sm">
         <div className="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
@@ -103,27 +94,6 @@ export default function LandingClient() {
             </div>
           ))}
         </div>
-      </section>
-
-      {/* is this you */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
-          {t.isThisYou.kicker}
-        </p>
-        <h2 className="text-center text-3xl sm:text-4xl font-black mb-14">
-          {t.isThisYou.title}
-        </h2>
-        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
-          {t.isThisYou.items.map((item) => (
-            <p key={item} className="flex gap-3 text-[#3a362e] leading-relaxed">
-              <span className="text-[#a9812f] shrink-0">⚡</span>
-              {item}
-            </p>
-          ))}
-        </div>
-        <p className="text-center text-[#5c574c] max-w-2xl mx-auto mt-14">
-          {t.isThisYou.closing}
-        </p>
       </section>
 
       {/* pillars */}
@@ -155,18 +125,6 @@ export default function LandingClient() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* why now */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <h2 className="text-3xl sm:text-4xl font-black mb-8 text-balance">
-          {t.why.title}
-        </h2>
-        <div className="space-y-4 text-[#5c574c] text-lg leading-relaxed">
-          <p>{t.why.body1}</p>
-          <p className="text-[#1c1a16] font-semibold">{t.why.body2}</p>
-          <p>{t.why.body3}</p>
         </div>
       </section>
 
