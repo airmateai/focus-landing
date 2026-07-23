@@ -33,7 +33,7 @@ export const dict = {
     },
     pillars: {
       title: "Lo que vas a aprender",
-      kicker: "Tres pilares. Un solo camino.",
+      kicker: "Siete caminos. Un solo objetivo.",
       items: [
         {
           num: "01",
@@ -49,6 +49,26 @@ export const dict = {
           num: "03",
           title: "Mentalidad",
           desc: "Disciplina, foco y la mentalidad que separa a quien ejecuta de quien sueña. Esto es la base de todo lo demás.",
+        },
+        {
+          num: "04",
+          title: "Amazon FBA",
+          desc: "Encuentra producto, monta tu marca y vende en el mayor marketplace del mundo sin tocar stock tú mismo.",
+        },
+        {
+          num: "05",
+          title: "E-commerce",
+          desc: "Construye tu propia tienda online, desde el producto hasta el checkout, y escálala con tráfico pagado.",
+        },
+        {
+          num: "06",
+          title: "Trading",
+          desc: "Gestión de riesgo, análisis técnico y disciplina para operar en los mercados sin dejarte llevar por la emoción.",
+        },
+        {
+          num: "07",
+          title: "Clipping",
+          desc: "Monetiza contenido viral para creadores: corta, edita y distribuye clips que generan ingresos reales.",
         },
       ],
     },
@@ -114,7 +134,7 @@ export const dict = {
     },
     pillars: {
       title: "What you'll learn",
-      kicker: "Three pillars. One path.",
+      kicker: "Seven paths. One goal.",
       items: [
         {
           num: "01",
@@ -130,6 +150,26 @@ export const dict = {
           num: "03",
           title: "Mindset",
           desc: "Discipline, focus, and the mindset that separates doers from dreamers. This is the base for everything else.",
+        },
+        {
+          num: "04",
+          title: "Amazon FBA",
+          desc: "Find a product, build your brand, and sell on the world's biggest marketplace without touching stock yourself.",
+        },
+        {
+          num: "05",
+          title: "E-commerce",
+          desc: "Build your own online store, from product to checkout, and scale it with paid traffic.",
+        },
+        {
+          num: "06",
+          title: "Trading",
+          desc: "Risk management, technical analysis, and the discipline to trade the markets without letting emotion drive you.",
+        },
+        {
+          num: "07",
+          title: "Clipping",
+          desc: "Monetize viral content for creators: cut, edit, and distribute clips that generate real income.",
         },
       ],
     },
