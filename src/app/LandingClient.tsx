@@ -90,7 +90,7 @@ export default function LandingClient() {
       </section>
 
       {/* stats bar */}
-      <section className="border-y border-[#e2ddd3] bg-white">
+      <section className="border-y border-[#e2ddd3] bg-white/55 backdrop-blur-sm">
         <div className="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {t.stats.map((s) => (
             <div key={s.label}>
@@ -127,7 +127,7 @@ export default function LandingClient() {
       </section>
 
       {/* pillars */}
-      <section id="pillars" className="bg-white border-y border-[#e2ddd3]">
+      <section id="pillars" className="bg-white/55 backdrop-blur-sm border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24">
           <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
             {t.pillars.kicker}
@@ -171,7 +171,7 @@ export default function LandingClient() {
       </section>
 
       {/* community */}
-      <section className="bg-white border-y border-[#e2ddd3]">
+      <section className="bg-white/55 backdrop-blur-sm border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24 grid sm:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-black mb-5 text-balance">
