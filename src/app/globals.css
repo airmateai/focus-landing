@@ -11,10 +11,14 @@
 }
 
 body {
-  background: var(--marble-bg);
+  background-color: var(--marble-bg);
   color: var(--ink);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   background-image:
     radial-gradient(ellipse 900px 500px at 12% 0%, rgba(169, 129, 47, 0.08), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 100% 15%, rgba(169, 129, 47, 0.05), transparent 55%);
+    radial-gradient(ellipse 700px 500px at 100% 15%, rgba(169, 129, 47, 0.05), transparent 55%),
+    url("/focus-landing/marble-texture.png");
+  background-size: 1600px auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
