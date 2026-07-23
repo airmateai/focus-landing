@@ -10,7 +10,7 @@ export default function LandingClient() {
   const t = dict[locale];
 
   return (
-    <div className="min-h-screen bg-[#f4f2ee] text-[#1c1a16]">
+    <div className="min-h-screen text-[#1c1a16] marble-bg">
       {/* urgency banner */}
       <div className="bg-gradient-to-r from-[#a9812f] to-[#c8a24f] text-white text-center text-sm font-semibold py-2.5 px-4">
         {t.urgency}

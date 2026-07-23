@@ -14,6 +14,10 @@ body {
   background-color: var(--marble-bg);
   color: var(--ink);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.marble-bg {
+  background-color: var(--marble-bg);
   background-image:
     radial-gradient(ellipse 900px 500px at 12% 0%, rgba(169, 129, 47, 0.08), transparent 60%),
     radial-gradient(ellipse 700px 500px at 100% 15%, rgba(169, 129, 47, 0.05), transparent 55%),
