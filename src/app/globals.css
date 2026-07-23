@@ -26,5 +26,5 @@ body {
   background-size: auto, auto, auto, 900px 1800px;
   background-repeat: no-repeat, no-repeat, no-repeat, repeat;
   background-position: top, top, top, top;
-  background-attachment: fixed, fixed, fixed, fixed;
+  background-attachment: scroll, scroll, scroll, scroll;
 }
