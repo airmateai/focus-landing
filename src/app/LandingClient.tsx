@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import focusLogo from "../../public/focus-logo.png";
 import { dict, type Locale } from "@/lib/i18n";
 
 export default function LandingClient() {
@@ -51,10 +52,8 @@ export default function LandingClient() {
         </p>
         <div className="flex justify-center mb-6">
           <Image
-            src="/focus-logo.png"
+            src={focusLogo}
             alt="Focus"
-            width={320}
-            height={220}
             className="w-64 sm:w-80 h-auto"
             priority
           />
