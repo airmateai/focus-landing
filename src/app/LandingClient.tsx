@@ -61,10 +61,7 @@ export default function LandingClient() {
         <h1 className="text-3xl sm:text-5xl font-black leading-[1.1] mb-6 text-balance">
           {t.hero.title}
         </h1>
-        <p className="text-[#5c574c] text-lg max-w-xl mx-auto mb-10">
-          {t.hero.subtitle}
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2">
           <a
             href="#pricing"
             className="w-full sm:w-auto bg-[#a9812f] text-white font-bold px-8 py-3.5 rounded-md hover:bg-[#8a691f] transition"
