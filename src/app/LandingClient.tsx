@@ -208,18 +208,6 @@ export default function LandingClient() {
             </a>
           </div>
         </div>
-
-        <div className="max-w-3xl mx-auto px-6 pb-24 text-center">
-          <h2 className="text-3xl sm:text-4xl font-black mb-8 text-balance">
-            {t.finalCta.title}
-          </h2>
-          <a
-            href="#pricing"
-            className="inline-block bg-[#a9812f] text-white font-bold px-10 py-4 rounded-md hover:bg-[#8a691f] transition"
-          >
-            {t.finalCta.cta}
-          </a>
-        </div>
       </section>
 
       <footer className="text-center py-10 border-t border-[#e2ddd3] space-y-2">
