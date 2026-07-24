@@ -80,7 +80,7 @@ export default function LandingClient() {
       </section>
 
       {/* pillars */}
-      <section id="pillars" className="marble-section border-y border-[#e2ddd3]">
+      <section id="pillars" className="border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24">
           <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
             {t.pillars.kicker}
@@ -112,7 +112,7 @@ export default function LandingClient() {
       </section>
 
       {/* community */}
-      <section className="marble-section border-y border-[#e2ddd3]">
+      <section className="border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24 grid sm:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-black mb-5 text-balance">
@@ -138,38 +138,35 @@ export default function LandingClient() {
         </div>
       </section>
 
-      {/* pricing */}
+      {/* pricing + final cta */}
       <section id="pricing" className="marble-section border-t border-[#e2ddd3]">
-      <div className="max-w-2xl mx-auto px-6 py-24">
-        <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
-          {t.pricing.kicker}
-        </p>
-        <h2 className="text-center text-3xl font-black mb-10 text-balance">
-          {t.pricing.title}
-        </h2>
-        <div className="border border-[#a9812f]/30 rounded-2xl p-10 text-center bg-gradient-to-b from-[#a9812f]/[0.05] to-white">
-          <div className="flex items-end justify-center gap-1 mb-4">
-            <span className="text-6xl font-black text-[#a9812f]">
-              {t.pricing.price}
-            </span>
-            <span className="text-[#5c574c] mb-2">{t.pricing.period}</span>
-          </div>
-          <p className="text-sm text-[#5c574c] mb-8 max-w-xs mx-auto">
-            {t.pricing.warning}
+        <div className="max-w-2xl mx-auto px-6 py-24">
+          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+            {t.pricing.kicker}
           </p>
-          <a
-            href="#"
-            className="inline-block bg-[#a9812f] text-white font-bold px-10 py-3.5 rounded-md hover:bg-[#8a691f] transition w-full sm:w-auto"
-          >
-            {t.pricing.cta}
-          </a>
+          <h2 className="text-center text-3xl font-black mb-10 text-balance">
+            {t.pricing.title}
+          </h2>
+          <div className="border border-[#a9812f]/30 rounded-2xl p-10 text-center bg-gradient-to-b from-[#a9812f]/[0.05] to-white">
+            <div className="flex items-end justify-center gap-1 mb-4">
+              <span className="text-6xl font-black text-[#a9812f]">
+                {t.pricing.price}
+              </span>
+              <span className="text-[#5c574c] mb-2">{t.pricing.period}</span>
+            </div>
+            <p className="text-sm text-[#5c574c] mb-8 max-w-xs mx-auto">
+              {t.pricing.warning}
+            </p>
+            <a
+              href="#"
+              className="inline-block bg-[#a9812f] text-white font-bold px-10 py-3.5 rounded-md hover:bg-[#8a691f] transition w-full sm:w-auto"
+            >
+              {t.pricing.cta}
+            </a>
+          </div>
         </div>
-      </div>
-      </section>
 
-      {/* final cta */}
-      <section className="marble-section border-t border-[#e2ddd3]">
-        <div className="max-w-3xl mx-auto px-6 py-24 text-center">
+        <div className="max-w-3xl mx-auto px-6 pb-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-black mb-8 text-balance">
             {t.finalCta.title}
           </h2>
