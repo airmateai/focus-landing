@@ -111,6 +111,20 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* showcase video */}
+      <section className="max-w-5xl mx-auto px-6 py-20">
+        <div className="rounded-2xl overflow-hidden border border-[#e2ddd3]">
+          <video
+            src="/focus-landing/showcase-1.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-auto block"
+          />
+        </div>
+      </section>
+
       {/* community */}
       <section className="border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24 grid sm:grid-cols-2 gap-12 items-center">
@@ -175,7 +189,7 @@ export default function LandingClient() {
               {t.pricing.warning}
             </p>
             <a
-              href="#"
+              href="https://buy.stripe.com/6oU7sL31549S0AC0jv2Ry0m"
               className="inline-block bg-[#a9812f] text-white font-bold px-10 py-3.5 rounded-md hover:bg-[#8a691f] transition w-full sm:w-auto"
             >
               {t.pricing.cta}
