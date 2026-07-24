@@ -88,6 +88,79 @@ export const dict = {
         "Contenido nuevo cada semana",
       ],
     },
+    access: {
+      kicker: "Lo que incluye tu acceso",
+      title: "Todo lo que necesitas. En un solo sitio.",
+      items: [
+        {
+          title: "Aprendizaje paso a paso",
+          desc: "7 módulos con lecciones organizadas, sin relleno ni teoría vacía. Aprendes haciendo, no memorizando.",
+        },
+        {
+          title: "Acceso directo a los fundadores",
+          desc: "Fabio y Fernando dentro de la comunidad todos los días — no son gurús desconectados, están construyendo esto contigo.",
+        },
+        {
+          title: "Una comunidad de verdad",
+          desc: "Canales para hablar, compartir wins, pedir consejo y ponerte tareas. Gente construyendo, no un grupo de Facebook muerto.",
+        },
+      ],
+    },
+    howItWorks: {
+      kicker: "Cómo funciona",
+      title: "Tu camino dentro de Focus",
+      steps: [
+        {
+          num: "01",
+          title: "Elige tu módulo",
+          desc: "IA, Marketing, Mentalidad, Amazon FBA, E-commerce, Trading o Clipping. Empieza por el que más te llame.",
+        },
+        {
+          num: "02",
+          title: "Sigue el camino",
+          desc: "Lecciones ordenadas, sin perderte. Márcalas como completadas y sube de nivel dentro de la comunidad.",
+        },
+        {
+          num: "03",
+          title: "Aplica y pregunta",
+          desc: "Lleva lo aprendido a la acción, y cuando te atasques, pregunta directamente en los canales. Nadie avanza solo.",
+        },
+      ],
+      closing: "Sin pasos ocultos, sin proceso complicado. La velocidad de tus resultados depende de la velocidad con la que actúes.",
+    },
+    faq: {
+      title: "Preguntas frecuentes",
+      items: [
+        {
+          q: "¿Necesito experiencia previa?",
+          a: "No. Los módulos están pensados para empezar desde cero. Lo único que necesitas es estar dispuesto a currar.",
+        },
+        {
+          q: "¿Cuánto tiempo necesito al día?",
+          a: "Con 30 minutos al día ya puedes avanzar. Lo importante es la constancia, no las horas.",
+        },
+        {
+          q: "¿Puedo cancelar cuando quiera?",
+          a: "Sí. Cancela cuando quieras desde tu cuenta, sin permanencia ni letra pequeña.",
+        },
+        {
+          q: "¿Funciona desde cualquier país?",
+          a: "Sí, Focus es 100% online. Solo necesitas conexión a internet.",
+        },
+        {
+          q: "¿Qué pasa si tengo dudas dentro de un módulo?",
+          a: "Preguntas directamente en los canales de la comunidad — Fabio, Fernando y el resto de miembros están ahí.",
+        },
+        {
+          q: "¿Hay contenido nuevo con el tiempo?",
+          a: "Sí, seguimos añadiendo lecciones y módulos según lo que la comunidad necesita.",
+        },
+        {
+          q: "¿Por qué el precio va a subir?",
+          a: "Cuantos más módulos y funciones añadimos, más sube el valor. Quien entra ahora con precio de fundador lo mantiene para siempre.",
+        },
+      ],
+    },
     pricing: {
       kicker: "Precio de fundador",
       title: "Únete ahora, antes de que suba",
@@ -187,6 +260,79 @@ export const dict = {
         "Direct access to the founders",
         "Parallel WhatsApp community",
         "New content every week",
+      ],
+    },
+    access: {
+      kicker: "What your access includes",
+      title: "Everything you need. In one place.",
+      items: [
+        {
+          title: "Step-by-step learning",
+          desc: "7 modules with organized lessons, no filler, no empty theory. You learn by doing, not memorizing.",
+        },
+        {
+          title: "Direct access to the founders",
+          desc: "Fabio and Fernando are inside the community every day — not distant gurus, they're building this with you.",
+        },
+        {
+          title: "A real community",
+          desc: "Channels to talk, share wins, ask for advice and set tasks. People building, not a dead Facebook group.",
+        },
+      ],
+    },
+    howItWorks: {
+      kicker: "How it works",
+      title: "Your path inside Focus",
+      steps: [
+        {
+          num: "01",
+          title: "Pick your module",
+          desc: "AI, Marketing, Mindset, Amazon FBA, E-commerce, Trading or Clipping. Start with whichever calls to you.",
+        },
+        {
+          num: "02",
+          title: "Follow the path",
+          desc: "Organized lessons, no guesswork. Mark them complete and level up inside the community.",
+        },
+        {
+          num: "03",
+          title: "Apply and ask",
+          desc: "Take what you learn into action, and when you get stuck, ask directly in the channels. Nobody moves forward alone.",
+        },
+      ],
+      closing: "No hidden steps, no complicated process. The speed of your results depends on the speed of your action.",
+    },
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        {
+          q: "Do I need prior experience?",
+          a: "No. The modules are designed to start from zero. All you need is willingness to put in the work.",
+        },
+        {
+          q: "How much time do I need per day?",
+          a: "30 minutes a day is enough to make progress. Consistency matters more than hours.",
+        },
+        {
+          q: "Can I cancel anytime?",
+          a: "Yes. Cancel whenever you want from your account, no commitment, no fine print.",
+        },
+        {
+          q: "Does it work from any country?",
+          a: "Yes, Focus is 100% online. You only need an internet connection.",
+        },
+        {
+          q: "What if I have questions inside a module?",
+          a: "You ask directly in the community channels — Fabio, Fernando, and the rest of the members are there.",
+        },
+        {
+          q: "Is new content added over time?",
+          a: "Yes, we keep adding lessons and modules based on what the community needs.",
+        },
+        {
+          q: "Why is the price going up?",
+          a: "As we add more modules and features, the value goes up. Whoever joins now at founder pricing keeps it forever.",
+        },
       ],
     },
     pricing: {

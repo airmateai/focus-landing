@@ -79,6 +79,41 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* is this you */}
+      <section className="max-w-4xl mx-auto px-6 py-20">
+        <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+          {t.isThisYou.kicker}
+        </p>
+        <h2 className="text-center text-3xl sm:text-4xl font-black mb-12">
+          {t.isThisYou.title}
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
+          {t.isThisYou.items.map((item) => (
+            <p key={item} className="flex gap-3 text-[#3a362e] leading-relaxed">
+              <span className="text-[#a9812f] shrink-0">⚡</span>
+              {item}
+            </p>
+          ))}
+        </div>
+        <p className="text-center text-[#5c574c] max-w-2xl mx-auto mt-10">
+          {t.isThisYou.closing}
+        </p>
+      </section>
+
+      {/* why */}
+      <section className="border-y border-[#e2ddd3] bg-white/50">
+        <div className="max-w-3xl mx-auto px-6 py-20 text-center">
+          <h2 className="text-3xl sm:text-4xl font-black mb-6 text-balance">
+            {t.why.title}
+          </h2>
+          <div className="space-y-3 text-[#5c574c] text-lg leading-relaxed">
+            <p>{t.why.body1}</p>
+            <p className="text-[#1c1a16] font-semibold">{t.why.body2}</p>
+            <p>{t.why.body3}</p>
+          </div>
+        </div>
+      </section>
+
       {/* pillars */}
       <section id="pillars" className="border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24">
@@ -135,6 +170,57 @@ export default function LandingClient() {
             />
           </div>
         </div>
+      </section>
+
+      {/* access */}
+      <section className="border-y border-[#e2ddd3] bg-white/50">
+        <div className="max-w-5xl mx-auto px-6 py-24">
+          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+            {t.access.kicker}
+          </p>
+          <h2 className="text-center text-3xl sm:text-4xl font-black mb-14 text-balance">
+            {t.access.title}
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {t.access.items.map((item) => (
+              <div
+                key={item.title}
+                className="border border-[#e2ddd3] bg-white rounded-2xl p-7"
+              >
+                <h3 className="font-bold text-[#8a691f] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#5c574c] leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* how it works */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+          {t.howItWorks.kicker}
+        </p>
+        <h2 className="text-center text-3xl sm:text-4xl font-black mb-14 text-balance">
+          {t.howItWorks.title}
+        </h2>
+        <div className="grid sm:grid-cols-3 gap-8">
+          {t.howItWorks.steps.map((step) => (
+            <div key={step.num} className="text-center">
+              <div className="text-4xl font-black text-[#e2ddd3] mb-3">
+                {step.num}
+              </div>
+              <h3 className="font-bold text-[#1c1a16] mb-2">{step.title}</h3>
+              <p className="text-sm text-[#5c574c] leading-relaxed">
+                {step.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-[#8a8478] text-sm max-w-lg mx-auto mt-14">
+          {t.howItWorks.closing}
+        </p>
       </section>
 
       {/* community */}
@@ -207,6 +293,30 @@ export default function LandingClient() {
               {t.pricing.cta}
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* faq */}
+      <section className="max-w-2xl mx-auto px-6 py-24">
+        <h2 className="text-center text-3xl font-black mb-12">{t.faq.title}</h2>
+        <div className="space-y-3">
+          {t.faq.items.map((item, i) => (
+            <details
+              key={item.q}
+              className="border border-[#e2ddd3] bg-white rounded-xl px-5 py-4 group"
+              open={i === 0}
+            >
+              <summary className="font-semibold text-[#1c1a16] cursor-pointer list-none flex items-center justify-between gap-4">
+                {item.q}
+                <span className="text-[#a9812f] text-lg group-open:rotate-45 transition-transform shrink-0">
+                  +
+                </span>
+              </summary>
+              <p className="text-sm text-[#5c574c] leading-relaxed mt-3">
+                {item.a}
+              </p>
+            </details>
+          ))}
         </div>
       </section>
 
