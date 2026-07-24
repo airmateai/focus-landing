@@ -147,8 +147,8 @@ export default function LandingClient() {
       </section>
 
       {/* showcase videos */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-2 gap-4">
+      <section className="max-w-5xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
             <video
               src="/focus-landing/showcase-1.mp4"
@@ -162,6 +162,16 @@ export default function LandingClient() {
           <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
             <video
               src="/focus-landing/showcase-2.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4] col-span-2 sm:col-span-1">
+            <video
+              src="/focus-landing/showcase-3.mp4"
               autoPlay
               muted
               loop
@@ -262,6 +272,20 @@ export default function LandingClient() {
               <p className="text-center text-xs uppercase tracking-widest text-[#8a691f] py-2 bg-white">
                 Fernando
               </p>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
+              <img
+                src="/focus-landing/fabio-burj.jpg"
+                alt="Fabio en Dubái"
+                className="w-full h-full object-cover aspect-[3/4]"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
+              <img
+                src="/focus-landing/fabio-lounge.jpg"
+                alt="Fabio en Dubái"
+                className="w-full h-full object-cover aspect-[3/4]"
+              />
             </div>
           </div>
         </div>
