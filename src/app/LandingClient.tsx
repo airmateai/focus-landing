@@ -179,8 +179,11 @@ export default function LandingClient() {
         </div>
       </section>
 
-      <footer className="text-center text-[#a49c8a] text-xs py-10 border-t border-[#e2ddd3]">
-        {t.footer}
+      <footer className="text-center py-10 border-t border-[#e2ddd3] space-y-2">
+        <p className="font-serif italic text-[#a9812f] text-sm tracking-wide">
+          In proud honor to the Tates
+        </p>
+        <p className="text-[#a49c8a] text-xs">{t.footer}</p>
       </footer>
     </div>
   );
