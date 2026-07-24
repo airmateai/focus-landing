@@ -80,11 +80,11 @@ export const dict = {
     },
     community: {
       title: "Una comunidad, no un curso más",
-      desc: "Canales en vivo, gente construyendo de verdad, y acceso directo a Fabio y Fernando. Además, comunidad de WhatsApp para estar siempre conectado.",
+      desc: "Canales en vivo, gente construyendo de verdad, y acceso directo a Fabio y Fernando. Además, comunidad de Telegram para estar siempre conectado.",
       features: [
         "Canales de chat en tiempo real",
         "Acceso directo a los fundadores",
-        "Comunidad de WhatsApp paralela",
+        "Comunidad de Telegram paralela",
         "Contenido nuevo cada semana",
       ],
     },
@@ -254,11 +254,11 @@ export const dict = {
     },
     community: {
       title: "A community, not just another course",
-      desc: "Live channels, people actually building, and direct access to Fabio and Fernando. Plus a WhatsApp community to stay connected.",
+      desc: "Live channels, people actually building, and direct access to Fabio and Fernando. Plus a Telegram community to stay connected.",
       features: [
         "Real-time chat channels",
         "Direct access to the founders",
-        "Parallel WhatsApp community",
+        "Parallel Telegram community",
         "New content every week",
       ],
     },
