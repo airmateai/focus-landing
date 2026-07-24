@@ -20,7 +20,7 @@ export default function LandingClient() {
       <header className="sticky top-0 z-40 backdrop-blur bg-[#f4f2ee]/90 border-b border-[#e2ddd3]">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
-            <Image src={focusLogo} alt="Focus" className="h-16 w-auto" priority />
+            <Image src={focusLogo} alt="Focus" className="h-24 w-auto" priority />
           </div>
           <nav className="hidden sm:flex items-center gap-8 text-sm text-[#5c574c]">
             <a href="#pillars" className="hover:text-[#8a691f] transition-colors">
@@ -77,22 +77,6 @@ export default function LandingClient() {
           >
             {t.hero.ctaSecondary}
           </a>
-        </div>
-      </section>
-
-      {/* stats bar */}
-      <section className="border-y border-[#e2ddd3] bg-white/55 backdrop-blur-sm">
-        <div className="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-          {t.stats.map((s) => (
-            <div key={s.label}>
-              <div className="text-3xl sm:text-4xl font-black text-[#a9812f] mb-1">
-                {s.value}
-              </div>
-              <div className="text-xs sm:text-sm text-[#5c574c] uppercase tracking-wide">
-                {s.label}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 

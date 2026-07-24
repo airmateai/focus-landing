@@ -19,15 +19,10 @@ body {
 .marble-bg {
   background-color: var(--marble-bg);
   background-image:
-    linear-gradient(
-      to bottom,
-      rgba(244, 242, 238, 0.42) 0%,
-      rgba(244, 242, 238, 0.5) 70%,
-      var(--marble-bg) 100%
-    ),
+    linear-gradient(rgba(244, 242, 238, 0.55), rgba(244, 242, 238, 0.55)),
     url("/focus-landing/marble-texture.jpg");
-  background-size: auto, 100% auto;
-  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 900px 502px;
+  background-repeat: no-repeat, repeat;
   background-position: top, top;
   background-attachment: scroll, scroll;
 }
