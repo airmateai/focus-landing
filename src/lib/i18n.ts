@@ -22,7 +22,7 @@ export const dict = {
       title: "¿ERES TÚ?",
       kicker: "Sé honesto contigo mismo",
       items: [
-        "Estás harto de estar sin blanca mientras ves a otros vivir la vida que quieres.",
+        "Estás harto de ir justo de dinero mientras ves a otros vivir la vida que quieres.",
         "Sabes que vales para más, pero nadie a tu alrededor lo entiende.",
         "Has intentado aprender con YouTube gratis, pero nada se te queda.",
         "Estás dispuesto a currar si alguien te enseña exactamente qué hacer.",
