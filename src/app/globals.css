@@ -18,11 +18,15 @@ body {
 
 .marble-bg {
   background-color: var(--marble-bg);
+}
+
+.marble-section {
+  position: relative;
+  background-color: var(--marble-bg);
   background-image:
     linear-gradient(rgba(244, 242, 238, 0.4), rgba(244, 242, 238, 0.4)),
     url("/focus-landing/marble-texture.jpg");
   background-size: auto, cover;
   background-repeat: no-repeat, no-repeat;
-  background-position: top, center top;
-  background-attachment: scroll, scroll;
+  background-position: center, center;
 }

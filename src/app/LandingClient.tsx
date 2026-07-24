@@ -48,37 +48,39 @@ export default function LandingClient() {
       </header>
 
       {/* hero */}
-      <section className="max-w-3xl mx-auto text-center px-6 pt-16 pb-10">
-        <Image
-          src={focusLogo}
-          alt="Focus"
-          className="w-full max-w-2xl h-auto mx-auto mb-6 drop-shadow-[0_10px_40px_rgba(169,129,47,0.25)]"
-          priority
-        />
-        <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs sm:text-sm font-semibold mb-5">
-          {t.hero.kicker}
-        </p>
-        <h1 className="text-3xl sm:text-5xl font-black leading-[1.1] mb-6 text-balance">
-          {t.hero.title}
-        </h1>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2">
-          <a
-            href="#pricing"
-            className="w-full sm:w-auto bg-[#a9812f] text-white font-bold px-8 py-3.5 rounded-md hover:bg-[#8a691f] transition"
-          >
-            {t.hero.cta}
-          </a>
-          <a
-            href="#pillars"
-            className="w-full sm:w-auto border border-[#1c1a16]/15 px-8 py-3.5 rounded-md hover:border-[#a9812f] hover:text-[#8a691f] transition"
-          >
-            {t.hero.ctaSecondary}
-          </a>
+      <section className="marble-section">
+        <div className="max-w-3xl mx-auto text-center px-6 pt-16 pb-16">
+          <Image
+            src={focusLogo}
+            alt="Focus"
+            className="w-full max-w-2xl h-auto mx-auto mb-6 drop-shadow-[0_10px_40px_rgba(169,129,47,0.25)]"
+            priority
+          />
+          <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs sm:text-sm font-semibold mb-5">
+            {t.hero.kicker}
+          </p>
+          <h1 className="text-3xl sm:text-5xl font-black leading-[1.1] mb-6 text-balance">
+            {t.hero.title}
+          </h1>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2">
+            <a
+              href="#pricing"
+              className="w-full sm:w-auto bg-[#a9812f] text-white font-bold px-8 py-3.5 rounded-md hover:bg-[#8a691f] transition"
+            >
+              {t.hero.cta}
+            </a>
+            <a
+              href="#pillars"
+              className="w-full sm:w-auto border border-[#1c1a16]/15 px-8 py-3.5 rounded-md hover:border-[#a9812f] hover:text-[#8a691f] transition"
+            >
+              {t.hero.ctaSecondary}
+            </a>
+          </div>
         </div>
       </section>
 
       {/* pillars */}
-      <section id="pillars" className="bg-white/55 backdrop-blur-sm border-y border-[#e2ddd3]">
+      <section id="pillars" className="marble-section border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24">
           <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
             {t.pillars.kicker}
@@ -110,7 +112,7 @@ export default function LandingClient() {
       </section>
 
       {/* community */}
-      <section className="bg-white/55 backdrop-blur-sm border-y border-[#e2ddd3]">
+      <section className="marble-section border-y border-[#e2ddd3]">
         <div className="max-w-5xl mx-auto px-6 py-24 grid sm:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-black mb-5 text-balance">
@@ -137,7 +139,8 @@ export default function LandingClient() {
       </section>
 
       {/* pricing */}
-      <section id="pricing" className="max-w-2xl mx-auto px-6 py-24">
+      <section id="pricing" className="marble-section border-t border-[#e2ddd3]">
+      <div className="max-w-2xl mx-auto px-6 py-24">
         <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
           {t.pricing.kicker}
         </p>
@@ -161,10 +164,11 @@ export default function LandingClient() {
             {t.pricing.cta}
           </a>
         </div>
+      </div>
       </section>
 
       {/* final cta */}
-      <section className="border-t border-[#e2ddd3]">
+      <section className="marble-section border-t border-[#e2ddd3]">
         <div className="max-w-3xl mx-auto px-6 py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-black mb-8 text-balance">
             {t.finalCta.title}
