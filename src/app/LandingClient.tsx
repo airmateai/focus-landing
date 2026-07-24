@@ -111,17 +111,29 @@ export default function LandingClient() {
         </div>
       </section>
 
-      {/* showcase video */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <div className="rounded-2xl overflow-hidden border border-[#e2ddd3]">
-          <video
-            src="/focus-landing/showcase-1.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-auto block"
-          />
+      {/* showcase videos */}
+      <section className="max-w-4xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
+            <video
+              src="/focus-landing/showcase-1.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
+            <video
+              src="/focus-landing/showcase-2.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
