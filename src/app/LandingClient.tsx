@@ -130,10 +130,27 @@ export default function LandingClient() {
               ))}
             </ul>
           </div>
-          <div className="aspect-square rounded-xl border border-[#e2ddd3] bg-gradient-to-br from-[#f4f2ee] via-white to-[#f4f2ee] flex items-center justify-center">
-            <p className="text-[#a49c8a] text-sm uppercase tracking-widest px-6 text-center">
-              [ captura de los canales próximamente ]
-            </p>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
+              <img
+                src="/focus-landing/fabio-dubai.jpg"
+                alt="Fabio, fundador de Focus"
+                className="w-full h-full object-cover aspect-[3/4]"
+              />
+              <p className="text-center text-xs uppercase tracking-widest text-[#8a691f] py-2 bg-white">
+                Fabio
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
+              <img
+                src="/focus-landing/fernando-dubai.jpg"
+                alt="Fernando, fundador de Focus"
+                className="w-full h-full object-cover aspect-[3/4]"
+              />
+              <p className="text-center text-xs uppercase tracking-widest text-[#8a691f] py-2 bg-white">
+                Fernando
+              </p>
+            </div>
           </div>
         </div>
       </section>
