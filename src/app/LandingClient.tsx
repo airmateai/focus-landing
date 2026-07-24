@@ -215,6 +215,15 @@ export default function LandingClient() {
           In proud honor to the Tates
         </p>
         <p className="text-[#a49c8a] text-xs">{t.footer}</p>
+        <p className="text-[#a49c8a] text-xs">
+          <a href="/focus-landing/terminos" className="hover:text-[#8a691f] underline">
+            Términos
+          </a>
+          {" · "}
+          <a href="/focus-landing/privacidad" className="hover:text-[#8a691f] underline">
+            Privacidad
+          </a>
+        </p>
       </footer>
     </div>
   );
