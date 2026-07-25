@@ -151,7 +151,7 @@ export default function LandingClient() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
             <video
-              src="/focus-landing/showcase-1.mp4"
+              src="/showcase-1.mp4"
               autoPlay
               muted
               loop
@@ -161,7 +161,7 @@ export default function LandingClient() {
           </div>
           <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4]">
             <video
-              src="/focus-landing/showcase-2.mp4"
+              src="/showcase-2.mp4"
               autoPlay
               muted
               loop
@@ -171,7 +171,7 @@ export default function LandingClient() {
           </div>
           <div className="rounded-2xl overflow-hidden border border-[#e2ddd3] aspect-[3/4] col-span-2 sm:col-span-1">
             <video
-              src="/focus-landing/showcase-3.mp4"
+              src="/showcase-3.mp4"
               autoPlay
               muted
               loop
@@ -255,7 +255,7 @@ export default function LandingClient() {
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
               <img
-                src="/focus-landing/fabio-dubai.jpg"
+                src="/fabio-dubai.jpg"
                 alt="Fabio, fundador de Focus"
                 className="w-full h-full object-cover aspect-[3/4]"
               />
@@ -265,7 +265,7 @@ export default function LandingClient() {
             </div>
             <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
               <img
-                src="/focus-landing/fernando-dubai.jpg"
+                src="/fernando-dubai.jpg"
                 alt="Fernando, fundador de Focus"
                 className="w-full h-full object-cover aspect-[3/4]"
               />
@@ -275,14 +275,14 @@ export default function LandingClient() {
             </div>
             <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
               <img
-                src="/focus-landing/fabio-burj.jpg"
+                src="/fabio-burj.jpg"
                 alt="Fabio en Dubái"
                 className="w-full h-full object-cover aspect-[3/4]"
               />
             </div>
             <div className="rounded-xl overflow-hidden border border-[#e2ddd3]">
               <img
-                src="/focus-landing/fabio-lounge.jpg"
+                src="/fabio-lounge.jpg"
                 alt="Fabio en Dubái"
                 className="w-full h-full object-cover aspect-[3/4]"
               />
@@ -350,11 +350,11 @@ export default function LandingClient() {
         </p>
         <p className="text-[#a49c8a] text-xs">{t.footer}</p>
         <p className="text-[#a49c8a] text-xs">
-          <a href="/focus-landing/terminos" className="hover:text-[#8a691f] underline">
+          <a href="/terminos" className="hover:text-[#8a691f] underline">
             Términos
           </a>
           {" · "}
-          <a href="/focus-landing/privacidad" className="hover:text-[#8a691f] underline">
+          <a href="/privacidad" className="hover:text-[#8a691f] underline">
             Privacidad
           </a>
         </p>
