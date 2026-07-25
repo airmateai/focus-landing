@@ -13,9 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thefocus.world"),
   title: "Focus — Escapa de la carrera de la rata",
   description:
     "La comunidad y plataforma para emprendedores de habla hispana. IA, marketing y mentalidad.",
+  openGraph: {
+    title: "Focus — Escapa de la carrera de la rata",
+    description:
+      "La comunidad y plataforma para emprendedores de habla hispana. IA, marketing y mentalidad.",
+    url: "https://thefocus.world",
+    siteName: "Focus",
+    locale: "es_ES",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
