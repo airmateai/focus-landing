@@ -320,7 +320,7 @@ export default function LandingClient() {
               {t.pricing.warning}
             </p>
             <a
-              href="https://pay.sumup.com/b2c/XKZ3A2B5PS"
+              href="https://buy.stripe.com/6oU7sL31549S0AC0jv2Ry0m"
               className="inline-block bg-[#a9812f] text-white font-bold px-10 py-3.5 rounded-md hover:bg-[#8a691f] transition w-full sm:w-auto"
             >
               {t.pricing.cta}
