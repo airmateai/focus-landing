@@ -52,8 +52,8 @@ export const dict = {
         },
         {
           num: "04",
-          title: "Amazon FBA",
-          desc: "Encuentra producto, monta tu marca y vende en el mayor marketplace del mundo sin tocar stock tú mismo.",
+          title: "Dropshipping",
+          desc: "Encuentra producto ganador, monta tu tienda y vende sin tocar stock ni invertir en inventario.",
         },
         {
           num: "05",
@@ -113,7 +113,7 @@ export const dict = {
         {
           num: "01",
           title: "Elige tu módulo",
-          desc: "IA, Marketing, Mentalidad, Amazon FBA, E-commerce, Trading o Clipping. Empieza por el que más te llame.",
+          desc: "IA, Marketing, Mentalidad, Dropshipping, E-commerce, Trading o Clipping. Empieza por el que más te llame.",
         },
         {
           num: "02",
@@ -226,8 +226,8 @@ export const dict = {
         },
         {
           num: "04",
-          title: "Amazon FBA",
-          desc: "Find a product, build your brand, and sell on the world's biggest marketplace without touching stock yourself.",
+          title: "Dropshipping",
+          desc: "Find a winning product, build your store, and sell without ever touching stock or investing in inventory.",
         },
         {
           num: "05",
@@ -287,7 +287,7 @@ export const dict = {
         {
           num: "01",
           title: "Pick your module",
-          desc: "AI, Marketing, Mindset, Amazon FBA, E-commerce, Trading or Clipping. Start with whichever calls to you.",
+          desc: "AI, Marketing, Mindset, Dropshipping, E-commerce, Trading or Clipping. Start with whichever calls to you.",
         },
         {
           num: "02",
