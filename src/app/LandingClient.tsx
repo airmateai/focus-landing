@@ -1,13 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import focusLogo from "../../public/focus-logo.png";
 import { dict, type Locale } from "@/lib/i18n";
+import { trackPageView, joinPresence } from "@/lib/analytics";
 
 export default function LandingClient() {
   const [locale, setLocale] = useState<Locale>("es");
   const t = dict[locale];
+
+  useEffect(() => {
+    trackPageView();
+    const channel = joinPresence();
+    return () => {
+      channel.unsubscribe();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen text-[#1c1a16] marble-bg">
