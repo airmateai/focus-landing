@@ -99,7 +99,7 @@ export default function LandingClient() {
         <div className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
           {t.isThisYou.items.map((item) => (
             <p key={item} className="flex gap-3 text-[#3a362e] leading-relaxed">
-              <span className="text-[#a9812f] shrink-0">⚡</span>
+              <span className="text-[#a9812f] shrink-0">—</span>
               {item}
             </p>
           ))}
