@@ -11,7 +11,6 @@ const MINDSET_VIDEO_ID = "wIesDiFYj1E";
 export default function LandingClient() {
   const [locale, setLocale] = useState<Locale>("es");
   const [memberCount, setMemberCount] = useState(122);
-  const [videoPlaying, setVideoPlaying] = useState(false);
   const t = dict[locale];
 
   useEffect(() => {
@@ -136,34 +135,18 @@ export default function LandingClient() {
           <p className="text-white/60 max-w-xl mx-auto mb-10">
             {t.mindsetVideo.desc}
           </p>
-          <div className="max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#a9812f]/40 shadow-[0_20px_60px_rgba(0,0,0,0.5)] aspect-video relative group">
-            {videoPlaying ? (
-              <iframe
-                src={`https://www.youtube.com/embed/${MINDSET_VIDEO_ID}?autoplay=1`}
-                title="Focus — vídeo de mentalidad"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            ) : (
-              <button
-                onClick={() => setVideoPlaying(true)}
-                className="absolute inset-0 w-full h-full cursor-pointer"
-                aria-label="Reproducir vídeo"
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${MINDSET_VIDEO_ID}/maxresdefault.jpg`}
-                  alt="Focus — vídeo de mentalidad"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/35 group-hover:bg-black/25 transition-colors" />
-                <span className="absolute inset-0 flex items-center justify-center">
-                  <span className="w-20 h-20 rounded-full bg-[#a9812f] flex items-center justify-center text-3xl pulse-glow group-hover:scale-105 transition-transform shadow-lg">
-                    ▶
-                  </span>
-                </span>
-              </button>
-            )}
+          <div className="max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#a9812f]/40 shadow-[0_20px_60px_rgba(0,0,0,0.5)] aspect-video relative">
+            <img
+              src={`https://img.youtube.com/vi/${MINDSET_VIDEO_ID}/maxresdefault.jpg`}
+              alt="Focus — vídeo de mentalidad"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/35" />
+            <span className="absolute inset-0 flex items-center justify-center">
+              <span className="w-20 h-20 rounded-full bg-[#a9812f] flex items-center justify-center text-3xl pulse-glow shadow-lg">
+                🔒
+              </span>
+            </span>
           </div>
         </div>
       </section>
