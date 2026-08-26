@@ -68,7 +68,7 @@ export const dict = {
         {
           num: "06",
           title: "Trading",
-          desc: "Gestión de riesgo, análisis técnico y disciplina para operar en los mercados sin dejarte llevar por la emoción.",
+          desc: "Gestión de riesgo, análisis técnico y disciplina para operar en los mercados sin dejarte llevar por la emoción. Incluye memecoins.",
         },
         {
           num: "07",
@@ -247,7 +247,7 @@ export const dict = {
         {
           num: "06",
           title: "Trading",
-          desc: "Risk management, technical analysis, and the discipline to trade the markets without letting emotion drive you.",
+          desc: "Risk management, technical analysis, and the discipline to trade the markets without letting emotion drive you. Includes memecoins.",
         },
         {
           num: "07",
