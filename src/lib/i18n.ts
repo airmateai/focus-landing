@@ -74,7 +74,7 @@ export const dict = {
         {
           num: "06",
           title: "Trading",
-          desc: "Gestión de riesgo, análisis técnico y disciplina para operar en los mercados sin dejarte llevar por la emoción. Incluye memecoins.",
+          desc: "Gestión de riesgo, análisis técnico y disciplina para operar en los mercados sin dejarte llevar por la emoción. Incluye memecoins, con acceso a Insiders — la comunidad hispanohablante donde se analizan runners y wallets en directo.",
         },
         {
           num: "07",
@@ -259,7 +259,7 @@ export const dict = {
         {
           num: "06",
           title: "Trading",
-          desc: "Risk management, technical analysis, and the discipline to trade the markets without letting emotion drive you. Includes memecoins.",
+          desc: "Risk management, technical analysis, and the discipline to trade the markets without letting emotion drive you. Includes memecoins, with access to Insiders — the Spanish-speaking community analyzing runners and wallets live.",
         },
         {
           num: "07",
