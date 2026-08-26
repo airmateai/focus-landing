@@ -88,6 +88,30 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* mindset video */}
+      <section className="border-y border-[#e2ddd3] bg-white/50">
+        <div className="max-w-3xl mx-auto px-6 py-20 text-center">
+          <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+            {t.mindsetVideo.kicker}
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-black mb-4 text-balance">
+            {t.mindsetVideo.title}
+          </h2>
+          <p className="text-[#5c574c] max-w-xl mx-auto mb-8">
+            {t.mindsetVideo.desc}
+          </p>
+          <div className="max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#a9812f]/30 shadow-[0_10px_40px_rgba(169,129,47,0.15)] aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/wIesDiFYj1E"
+              title="Focus — vídeo de mentalidad"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* is this you */}
       <section className="max-w-4xl mx-auto px-6 py-20">
         <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">

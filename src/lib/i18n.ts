@@ -18,6 +18,11 @@ export const dict = {
       { value: "100%", label: "En español" },
       { value: "2", label: "Fundadores construyendo contigo" },
     ],
+    mindsetVideo: {
+      kicker: "Ya disponible dentro",
+      title: "El vídeo de mentalidad que está cambiando cómo piensa la comunidad",
+      desc: "Esto es lo primero que ves al entrar en Focus. Realidad sin filtros, cero motivación de postureo.",
+    },
     isThisYou: {
       title: "¿ERES TÚ?",
       kicker: "Sé honesto contigo mismo",
@@ -192,6 +197,11 @@ export const dict = {
       { value: "100%", label: "In Spanish" },
       { value: "2", label: "Founders building with you" },
     ],
+    mindsetVideo: {
+      kicker: "Available inside now",
+      title: "The mindset video that's changing how the community thinks",
+      desc: "This is the first thing you see when you join Focus. Unfiltered reality, zero fake motivation.",
+    },
     isThisYou: {
       title: "IS THIS YOU?",
       kicker: "Be honest with yourself",
