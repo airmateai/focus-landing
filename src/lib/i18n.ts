@@ -4,6 +4,12 @@ export const dict = {
   es: {
     nav: { pillars: "Módulos", pricing: "Precio", login: "Entrar", join: "Únete ahora" },
     urgency: "⚠ El precio sube pronto. Asegura tu plaza al precio actual.",
+    ticker: [
+      "🔥 122 miembros ya dentro de Focus",
+      "⚠ El precio sube pronto — asegura tu plaza",
+      "🎙️ Insiders de memecoins en directo cada semana",
+      "📈 IA · Marketing · Mentalidad · Trading",
+    ],
     hero: {
       kicker: "Ganar dinero es una habilidad",
       title: "Nosotros te enseñamos a dominarla",
@@ -183,6 +189,12 @@ export const dict = {
   en: {
     nav: { pillars: "Modules", pricing: "Pricing", login: "Log in", join: "Join now" },
     urgency: "⚠ Price is going up soon. Lock in today's price.",
+    ticker: [
+      "🔥 122 members already inside Focus",
+      "⚠ Price going up soon — lock in your spot",
+      "🎙️ Live memecoin insiders sessions every week",
+      "📈 AI · Marketing · Mindset · Trading",
+    ],
     hero: {
       kicker: "Money making is a skill",
       title: "We will teach you how to master it",

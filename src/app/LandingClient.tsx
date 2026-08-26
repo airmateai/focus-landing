@@ -4,22 +4,50 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import focusLogo from "../../public/focus-logo.png";
 import { dict, type Locale } from "@/lib/i18n";
-import { trackPageView, joinPresence } from "@/lib/analytics";
+import { trackPageView, joinPresence, analyticsClient } from "@/lib/analytics";
+
+const MINDSET_VIDEO_ID = "wIesDiFYj1E";
 
 export default function LandingClient() {
   const [locale, setLocale] = useState<Locale>("es");
+  const [memberCount, setMemberCount] = useState(122);
+  const [videoPlaying, setVideoPlaying] = useState(false);
   const t = dict[locale];
 
   useEffect(() => {
     trackPageView();
     const channel = joinPresence();
+    analyticsClient
+      .rpc("member_count")
+      .then(({ data }) => {
+        if (typeof data === "number" && data > 0) setMemberCount(data);
+      });
     return () => {
       channel.unsubscribe();
     };
   }, []);
 
+  const tickerItems = t.ticker.map((item) =>
+    item.replace("122", String(memberCount)),
+  );
+
   return (
     <div className="min-h-screen text-[#1c1a16] marble-bg">
+      {/* live ticker */}
+      <div className="bg-[#1c1a16] text-white py-2 overflow-hidden whitespace-nowrap">
+        <div className="flex marquee-track w-max">
+          {[...tickerItems, ...tickerItems].map((item, i) => (
+            <span
+              key={i}
+              className="text-xs sm:text-sm font-semibold px-8 flex items-center gap-2 shrink-0"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#d9b876]" />
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* urgency banner */}
       <div className="bg-gradient-to-r from-[#a9812f] to-[#c8a24f] text-white text-center text-sm font-semibold py-2.5 px-4">
         {t.urgency}
@@ -89,25 +117,53 @@ export default function LandingClient() {
       </section>
 
       {/* mindset video */}
-      <section className="border-y border-[#e2ddd3] bg-white/50">
-        <div className="max-w-3xl mx-auto px-6 py-20 text-center">
-          <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+      <section className="relative bg-[#100e0a] text-white overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 20%, #d9b876 0%, transparent 40%), radial-gradient(circle at 80% 80%, #d9b876 0%, transparent 40%)",
+          }}
+        />
+        <div className="relative max-w-3xl mx-auto px-6 py-20 text-center">
+          <span className="inline-flex items-center gap-2 bg-[#a9812f]/15 border border-[#a9812f]/40 rounded-full px-4 py-1.5 text-[#d9b876] text-[11px] font-bold uppercase tracking-[0.2em] mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#d9b876] pulse-glow" />
             {t.mindsetVideo.kicker}
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-black mb-4 text-balance">
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-black mb-4 text-balance">
             {t.mindsetVideo.title}
           </h2>
-          <p className="text-[#5c574c] max-w-xl mx-auto mb-8">
+          <p className="text-white/60 max-w-xl mx-auto mb-10">
             {t.mindsetVideo.desc}
           </p>
-          <div className="max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#a9812f]/30 shadow-[0_10px_40px_rgba(169,129,47,0.15)] aspect-video">
-            <iframe
-              src="https://www.youtube.com/embed/wIesDiFYj1E"
-              title="Focus — vídeo de mentalidad"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
+          <div className="max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#a9812f]/40 shadow-[0_20px_60px_rgba(0,0,0,0.5)] aspect-video relative group">
+            {videoPlaying ? (
+              <iframe
+                src={`https://www.youtube.com/embed/${MINDSET_VIDEO_ID}?autoplay=1`}
+                title="Focus — vídeo de mentalidad"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            ) : (
+              <button
+                onClick={() => setVideoPlaying(true)}
+                className="absolute inset-0 w-full h-full cursor-pointer"
+                aria-label="Reproducir vídeo"
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${MINDSET_VIDEO_ID}/maxresdefault.jpg`}
+                  alt="Focus — vídeo de mentalidad"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/35 group-hover:bg-black/25 transition-colors" />
+                <span className="absolute inset-0 flex items-center justify-center">
+                  <span className="w-20 h-20 rounded-full bg-[#a9812f] flex items-center justify-center text-3xl pulse-glow group-hover:scale-105 transition-transform shadow-lg">
+                    ▶
+                  </span>
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </section>
