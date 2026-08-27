@@ -152,31 +152,66 @@ export default function LandingClient() {
       </section>
 
       {/* news */}
-      <section className="border-y border-[#e2ddd3] bg-white/60">
-        <div className="max-w-4xl mx-auto px-6 py-20">
-          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
-            {t.news.kicker}
-          </p>
-          <h2 className="text-center text-2xl sm:text-4xl font-black mb-4 text-balance">
-            {t.news.title}
-          </h2>
-          <p className="text-center text-[#5c574c] max-w-xl mx-auto mb-12">
-            {t.news.desc}
-          </p>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {t.news.items.map((item) => (
-              <div
-                key={item.title}
-                className="border border-[#e2ddd3] bg-white rounded-2xl p-5 flex flex-col gap-3"
-              >
-                <span className="inline-flex w-fit items-center gap-1.5 text-[10px] font-bold uppercase tracking-wide text-[#8a691f] bg-[#a9812f]/10 rounded-full px-2.5 py-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#a9812f]" />
-                  {item.source}
+      <section className="bg-[#100e0a] text-white">
+        <div className="max-w-6xl mx-auto px-6 py-24 sm:py-28">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
+            <div>
+              <p className="uppercase tracking-[0.25em] text-[#d9b876] text-xs font-semibold mb-3">
+                {t.news.kicker}
+              </p>
+              <h2 className="text-3xl sm:text-5xl font-black text-balance max-w-xl">
+                {t.news.title}
+              </h2>
+            </div>
+            <p className="text-white/60 max-w-sm sm:text-right">
+              {t.news.desc}
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-5">
+            {/* featured */}
+            <a
+              href="#pricing"
+              className="group relative rounded-2xl overflow-hidden aspect-[4/5] sm:row-span-2 border border-white/10"
+            >
+              <img
+                src={t.news.items[0].image}
+                alt={t.news.items[0].title}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+              <div className="absolute inset-0 p-7 flex flex-col justify-end">
+                <span className="inline-flex w-fit items-center gap-1.5 text-[10px] font-bold uppercase tracking-wide text-[#100e0a] bg-[#d9b876] rounded-full px-2.5 py-1 mb-4">
+                  {t.news.items[0].source}
                 </span>
-                <p className="text-sm font-semibold text-[#1c1a16] leading-snug">
-                  {item.title}
+                <p className="text-xl sm:text-2xl font-bold leading-snug text-balance">
+                  {t.news.items[0].title}
                 </p>
               </div>
+            </a>
+
+            {/* secondary items */}
+            {t.news.items.slice(1).map((item) => (
+              <a
+                key={item.title}
+                href="#pricing"
+                className="group relative rounded-2xl overflow-hidden aspect-[16/9] border border-white/10"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+                <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                  <span className="inline-flex w-fit items-center gap-1.5 text-[10px] font-bold uppercase tracking-wide text-[#100e0a] bg-[#d9b876] rounded-full px-2.5 py-1 mb-3">
+                    {item.source}
+                  </span>
+                  <p className="text-base font-bold leading-snug text-balance">
+                    {item.title}
+                  </p>
+                </div>
+              </a>
             ))}
           </div>
         </div>

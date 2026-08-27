@@ -34,9 +34,21 @@ export const dict = {
       title: "Esto es lo que os ponemos",
       desc: "Dentro de la comunidad estarás al día con todo lo que pasa en el mundo y afecta a tu negocio — economía, mercados, IA y cripto. Se actualiza solo, sin que tengas que buscarlo tú.",
       items: [
-        { source: "Mercados", title: "La Fed mueve tipos y las bolsas reaccionan en minutos — lo que significa para tu cartera" },
-        { source: "Cripto", title: "Nueva ola de capital institucional entra en el mercado de memecoins" },
-        { source: "IA", title: "El último modelo que está cambiando cómo se construyen negocios online" },
+        {
+          source: "Mercados",
+          title: "La Fed mueve tipos y las bolsas reaccionan en minutos — lo que significa para tu cartera",
+          image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+        },
+        {
+          source: "Cripto",
+          title: "Nueva ola de capital institucional entra en el mercado de memecoins",
+          image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop",
+        },
+        {
+          source: "IA",
+          title: "El último modelo que está cambiando cómo se construyen negocios online",
+          image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+        },
       ],
     },
     isThisYou: {
@@ -229,9 +241,21 @@ export const dict = {
       title: "This is what we post",
       desc: "Inside the community you'll stay up to date with everything happening in the world that affects your business — economy, markets, AI, and crypto. It updates itself, no digging required.",
       items: [
-        { source: "Markets", title: "The Fed moves rates and stocks react within minutes — what it means for your portfolio" },
-        { source: "Crypto", title: "A new wave of institutional capital is entering the memecoin market" },
-        { source: "AI", title: "The latest model that's changing how online businesses are built" },
+        {
+          source: "Markets",
+          title: "The Fed moves rates and stocks react within minutes — what it means for your portfolio",
+          image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+        },
+        {
+          source: "Crypto",
+          title: "A new wave of institutional capital is entering the memecoin market",
+          image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop",
+        },
+        {
+          source: "AI",
+          title: "The latest model that's changing how online businesses are built",
+          image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+        },
       ],
     },
     isThisYou: {
