@@ -8,6 +8,82 @@ import { trackPageView, joinPresence, analyticsClient } from "@/lib/analytics";
 
 const MINDSET_VIDEO_ID = "wIesDiFYj1E";
 
+function CheckIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M4 12l5 5L20 6" />
+    </svg>
+  );
+}
+
+function LockIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="4" y="10" width="16" height="10" rx="2" />
+      <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+    </svg>
+  );
+}
+
+function PlayIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M7 5.5v13a1 1 0 0 0 1.5.87l11-6.5a1 1 0 0 0 0-1.74l-11-6.5A1 1 0 0 0 7 5.5z" />
+    </svg>
+  );
+}
+
+function TrendUpIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M3 17l6-6 4 4 8-8" />
+      <path d="M15 7h6v6" />
+    </svg>
+  );
+}
+
+function MicIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="9" y="2" width="6" height="12" rx="3" />
+      <path d="M5 11a7 7 0 0 0 14 0" />
+      <path d="M12 18v4" />
+      <path d="M8 22h8" />
+    </svg>
+  );
+}
+
+function LayersIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M12 2 2 7l10 5 10-5-10-5z" />
+      <path d="M2 17l10 5 10-5" />
+      <path d="M2 12l10 5 10-5" />
+    </svg>
+  );
+}
+
+function AlertIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M12 3 2 20h20L12 3z" />
+      <path d="M12 10v4" />
+      <path d="M12 17h.01" />
+    </svg>
+  );
+}
+
+function UsersIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <circle cx="9" cy="8" r="3.2" />
+      <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
+      <path d="M16 4.2a3.2 3.2 0 0 1 0 6.2" />
+      <path d="M18.5 14c2.4.5 4 2.2 4 6" />
+    </svg>
+  );
+}
+
 export default function LandingClient() {
   const [locale, setLocale] = useState<Locale>("es");
   const [memberCount, setMemberCount] = useState(122);
@@ -26,9 +102,11 @@ export default function LandingClient() {
     };
   }, []);
 
-  const tickerItems = t.ticker.map((item) =>
-    item.replace("122", String(memberCount)),
-  );
+  const tickerIcons = [UsersIcon, AlertIcon, MicIcon, TrendUpIcon];
+  const tickerItems = t.ticker.map((item, i) => ({
+    text: item.replace("122", String(memberCount)),
+    Icon: tickerIcons[i] ?? UsersIcon,
+  }));
 
   return (
     <div className="min-h-screen text-[#1c1a16] marble-bg">
@@ -40,8 +118,8 @@ export default function LandingClient() {
               key={i}
               className="text-xs sm:text-sm font-semibold px-8 flex items-center gap-2 shrink-0"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#d9b876]" />
-              {item}
+              <item.Icon className="w-3.5 h-3.5 text-[#d9b876] shrink-0" />
+              {item.text}
             </span>
           ))}
         </div>
@@ -150,8 +228,8 @@ export default function LandingClient() {
             />
             <div className="absolute inset-0 bg-black/35" />
             <span className="absolute inset-0 flex items-center justify-center">
-              <span className="w-20 h-20 rounded-full bg-[#a9812f] flex items-center justify-center text-3xl pulse-glow shadow-lg">
-                🔒
+              <span className="w-20 h-20 rounded-full bg-[#a9812f] flex items-center justify-center pulse-glow shadow-lg">
+                <LockIcon className="w-8 h-8 text-white" />
               </span>
             </span>
           </div>
@@ -391,7 +469,7 @@ export default function LandingClient() {
             <ul className="space-y-3">
               {t.community.features.map((f) => (
                 <li key={f} className="flex items-center gap-3 text-sm text-[#3a362e]">
-                  <span className="text-[#a9812f]">✓</span>
+                  <CheckIcon className="w-4 h-4 text-[#a9812f] shrink-0" />
                   {f}
                 </li>
               ))}
@@ -450,7 +528,7 @@ export default function LandingClient() {
             <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-r from-[#a9812f] via-[#f0d78c] to-[#a9812f] opacity-60 blur-lg pulse-glow" />
             <div className="relative border-2 border-[#a9812f] rounded-2xl p-10 text-center bg-gradient-to-b from-[#fff9ec] to-white shadow-[0_20px_60px_rgba(169,129,47,0.25)]">
               <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#a9812f] text-white text-[11px] font-bold uppercase tracking-wide px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
-                {t.pricing.kicker.replace("🔥 ", "")}
+                {t.pricing.kicker}
               </span>
 
               <div className="flex items-baseline justify-center gap-2 mb-1">

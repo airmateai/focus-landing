@@ -3,12 +3,12 @@ export type Locale = "es" | "en";
 export const dict = {
   es: {
     nav: { pillars: "Módulos", pricing: "Precio", login: "Entrar", join: "Únete ahora" },
-    urgency: "⚠ El precio sube pronto. Asegura tu plaza al precio actual.",
+    urgency: "El precio sube pronto. Asegura tu plaza al precio actual.",
     ticker: [
-      "🔥 122 miembros ya dentro de Focus",
-      "⚠ El precio sube pronto — asegura tu plaza",
-      "🎙️ Insiders de memecoins en directo cada semana",
-      "📈 IA · Marketing · Mentalidad · Trading",
+      "122 miembros ya dentro de Focus",
+      "El precio sube pronto — asegura tu plaza",
+      "Insiders de memecoins en directo cada semana",
+      "IA · Marketing · Mentalidad · Trading",
     ],
     hero: {
       kicker: "Ganar dinero es una habilidad",
@@ -195,7 +195,7 @@ export const dict = {
       ],
     },
     pricing: {
-      kicker: "🔥 Precio de fundador — se acaba pronto",
+      kicker: "Precio de fundador — se acaba pronto",
       title: "Únete ahora, antes de que suba",
       price: "29,99€",
       nextPrice: "49,99€",
@@ -212,12 +212,12 @@ export const dict = {
   },
   en: {
     nav: { pillars: "Modules", pricing: "Pricing", login: "Log in", join: "Join now" },
-    urgency: "⚠ Price is going up soon. Lock in today's price.",
+    urgency: "Price is going up soon. Lock in today's price.",
     ticker: [
-      "🔥 122 members already inside Focus",
-      "⚠ Price going up soon — lock in your spot",
-      "🎙️ Live memecoin insiders sessions every week",
-      "📈 AI · Marketing · Mindset · Trading",
+      "122 members already inside Focus",
+      "Price going up soon — lock in your spot",
+      "Live memecoin insiders sessions every week",
+      "AI · Marketing · Mindset · Trading",
     ],
     hero: {
       kicker: "Money making is a skill",
@@ -404,7 +404,7 @@ export const dict = {
       ],
     },
     pricing: {
-      kicker: "🔥 Founder pricing — ending soon",
+      kicker: "Founder pricing — ending soon",
       title: "Join now, before it goes up",
       price: "€29.99",
       nextPrice: "€49.99",
