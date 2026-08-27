@@ -432,28 +432,47 @@ export default function LandingClient() {
       {/* pricing + final cta */}
       <section id="pricing" className="marble-section border-t border-[#e2ddd3]">
         <div className="max-w-2xl mx-auto px-6 py-24">
-          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3 animate-pulse">
             {t.pricing.kicker}
           </p>
-          <h2 className="text-center text-3xl font-black mb-10 text-balance">
+          <h2 className="text-center text-3xl sm:text-4xl font-black mb-10 text-balance">
             {t.pricing.title}
           </h2>
-          <div className="border border-[#a9812f]/30 rounded-2xl p-10 text-center bg-gradient-to-b from-[#a9812f]/[0.05] to-white">
-            <div className="flex items-end justify-center gap-1 mb-4">
-              <span className="text-6xl font-black text-[#a9812f]">
-                {t.pricing.price}
+
+          <div className="relative">
+            <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-r from-[#a9812f] via-[#f0d78c] to-[#a9812f] opacity-60 blur-lg pulse-glow" />
+            <div className="relative border-2 border-[#a9812f] rounded-2xl p-10 text-center bg-gradient-to-b from-[#fff9ec] to-white shadow-[0_20px_60px_rgba(169,129,47,0.25)]">
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#a9812f] text-white text-[11px] font-bold uppercase tracking-wide px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                {t.pricing.kicker.replace("🔥 ", "")}
               </span>
-              <span className="text-[#5c574c] mb-2">{t.pricing.period}</span>
+
+              <div className="flex items-baseline justify-center gap-2 mb-1">
+                <span className="text-lg text-[#a49c8a] line-through decoration-2">
+                  {t.pricing.nextPrice}
+                </span>
+                <span className="text-[10px] font-bold uppercase tracking-wide text-white bg-red-500 px-2 py-0.5 rounded-full">
+                  −40%
+                </span>
+              </div>
+              <div className="flex items-end justify-center gap-1 mb-4">
+                <span className="text-7xl font-black text-[#a9812f] tracking-tight">
+                  {t.pricing.price}
+                </span>
+                <span className="text-[#5c574c] mb-3 text-lg">{t.pricing.period}</span>
+              </div>
+
+              <p className="text-sm text-[#3a362e] font-medium mb-1 max-w-sm mx-auto">
+                {t.pricing.warning}
+              </p>
+              <p className="text-xs text-[#a49c8a] mb-8">{t.pricing.subCta}</p>
+
+              <a
+                href="https://buy.stripe.com/6oU7sL31549S0AC0jv2Ry0m"
+                className="inline-block bg-[#a9812f] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#8a691f] hover:scale-[1.02] transition-all shadow-lg w-full sm:w-auto pulse-glow"
+              >
+                {t.pricing.cta} →
+              </a>
             </div>
-            <p className="text-sm text-[#5c574c] mb-8 max-w-xs mx-auto">
-              {t.pricing.warning}
-            </p>
-            <a
-              href="https://buy.stripe.com/6oU7sL31549S0AC0jv2Ry0m"
-              className="inline-block bg-[#a9812f] text-white font-bold px-10 py-3.5 rounded-md hover:bg-[#8a691f] transition w-full sm:w-auto"
-            >
-              {t.pricing.cta}
-            </a>
           </div>
         </div>
       </section>
