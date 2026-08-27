@@ -151,6 +151,37 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* news */}
+      <section className="border-y border-[#e2ddd3] bg-white/60">
+        <div className="max-w-4xl mx-auto px-6 py-20">
+          <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">
+            {t.news.kicker}
+          </p>
+          <h2 className="text-center text-2xl sm:text-4xl font-black mb-4 text-balance">
+            {t.news.title}
+          </h2>
+          <p className="text-center text-[#5c574c] max-w-xl mx-auto mb-12">
+            {t.news.desc}
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {t.news.items.map((item) => (
+              <div
+                key={item.title}
+                className="border border-[#e2ddd3] bg-white rounded-2xl p-5 flex flex-col gap-3"
+              >
+                <span className="inline-flex w-fit items-center gap-1.5 text-[10px] font-bold uppercase tracking-wide text-[#8a691f] bg-[#a9812f]/10 rounded-full px-2.5 py-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#a9812f]" />
+                  {item.source}
+                </span>
+                <p className="text-sm font-semibold text-[#1c1a16] leading-snug">
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* is this you */}
       <section className="max-w-4xl mx-auto px-6 py-20">
         <p className="text-center uppercase tracking-[0.25em] text-[#8a691f] text-xs font-semibold mb-3">

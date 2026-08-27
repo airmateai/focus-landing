@@ -29,6 +29,16 @@ export const dict = {
       title: "El vídeo de mentalidad que está cambiando cómo piensa la comunidad",
       desc: "Esto es lo primero que ves al entrar en Focus. Realidad sin filtros, cero motivación de postureo.",
     },
+    news: {
+      kicker: "Apartado de Noticias",
+      title: "Esto es lo que os ponemos",
+      desc: "Dentro de la comunidad estarás al día con todo lo que pasa en el mundo y afecta a tu negocio — economía, mercados, IA y cripto. Se actualiza solo, sin que tengas que buscarlo tú.",
+      items: [
+        { source: "Mercados", title: "La Fed mueve tipos y las bolsas reaccionan en minutos — lo que significa para tu cartera" },
+        { source: "Cripto", title: "Nueva ola de capital institucional entra en el mercado de memecoins" },
+        { source: "IA", title: "El último modelo que está cambiando cómo se construyen negocios online" },
+      ],
+    },
     isThisYou: {
       title: "¿ERES TÚ?",
       kicker: "Sé honesto contigo mismo",
@@ -213,6 +223,16 @@ export const dict = {
       kicker: "Available inside now",
       title: "The mindset video that's changing how the community thinks",
       desc: "This is the first thing you see when you join Focus. Unfiltered reality, zero fake motivation.",
+    },
+    news: {
+      kicker: "News section",
+      title: "This is what we post",
+      desc: "Inside the community you'll stay up to date with everything happening in the world that affects your business — economy, markets, AI, and crypto. It updates itself, no digging required.",
+      items: [
+        { source: "Markets", title: "The Fed moves rates and stocks react within minutes — what it means for your portfolio" },
+        { source: "Crypto", title: "A new wave of institutional capital is entering the memecoin market" },
+        { source: "AI", title: "The latest model that's changing how online businesses are built" },
+      ],
     },
     isThisYou: {
       title: "IS THIS YOU?",
