@@ -84,8 +84,15 @@ export default function LandingClient() {
       </header>
 
       {/* hero */}
-      <section className="marble-section">
-        <div className="max-w-3xl mx-auto text-center px-6 pt-16 pb-16">
+      <section className="marble-section relative overflow-hidden">
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] max-w-3xl aspect-square rounded-full pointer-events-none aura-glow"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(169,129,47,0.28) 0%, rgba(217,184,118,0.14) 35%, transparent 70%)",
+          }}
+        />
+        <div className="max-w-3xl mx-auto text-center px-6 pt-16 pb-16 relative">
           <Image
             src={focusLogo}
             alt="Focus"
