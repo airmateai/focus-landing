@@ -117,6 +117,8 @@ export const dict = {
       ],
       urgency: "El 1 de septiembre el precio sube a 49,99€.",
       cta: "Entra antes de que suba",
+      newBadge: "Nuevo",
+      launchBanner: "Novedad — clases de memecoins ya disponibles dentro de la comunidad",
     },
     why: {
       title: "El sistema educativo tradicional te está frenando",
@@ -339,6 +341,8 @@ export const dict = {
       ],
       urgency: "On September 1st the price goes up to $49.99.",
       cta: "Join before it goes up",
+      newBadge: "New",
+      launchBanner: "New — memecoins classes now available inside the community",
     },
     why: {
       title: "The traditional education system is holding you back",

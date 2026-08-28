@@ -130,6 +130,17 @@ export default function LandingClient() {
         {t.urgency}
       </div>
 
+      {/* memecoins launch banner */}
+      <a
+        href="#insiders"
+        className="block bg-[#0a0f0d] text-[#1fe08a] text-center text-sm font-bold py-2 px-4 border-b border-[#1fe08a]/30 hover:bg-[#0f1613] transition"
+      >
+        <span className="inline-flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#1fe08a] animate-pulse" />
+          {t.insiders.launchBanner}
+        </span>
+      </a>
+
       {/* nav */}
       <header className="sticky top-0 z-40 backdrop-blur bg-[#f4f2ee]/90 border-b border-[#e2ddd3]">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
@@ -370,7 +381,7 @@ export default function LandingClient() {
       </section>
 
       {/* insiders memecoins */}
-      <section className="relative bg-[#070a08] text-white overflow-hidden border-y border-[#1fe08a]/20">
+      <section id="insiders" className="relative bg-[#070a08] text-white overflow-hidden border-y border-[#1fe08a]/20">
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -385,7 +396,12 @@ export default function LandingClient() {
               {t.insiders.kicker}
             </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black mb-5 font-mono">{t.insiders.title}</h2>
+          <h2 className="text-3xl sm:text-5xl font-black mb-5 font-mono flex items-center gap-3 flex-wrap">
+            {t.insiders.title}
+            <span className="text-xs font-black bg-[#1fe08a] text-[#070a08] px-2.5 py-1 rounded-full tracking-normal">
+              {t.insiders.newBadge}
+            </span>
+          </h2>
           <p className="text-[#c9f5df]/80 max-w-2xl text-lg leading-relaxed mb-14">
             {t.insiders.subtitle}
           </p>
