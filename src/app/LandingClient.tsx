@@ -369,6 +369,58 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* insiders memecoins */}
+      <section className="relative bg-[#070a08] text-white overflow-hidden border-y border-[#1fe08a]/20">
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            background:
+              "radial-gradient(circle at 20% 20%, rgba(31,224,138,0.25) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(31,224,138,0.15) 0%, transparent 50%)",
+          }}
+        />
+        <div className="relative max-w-5xl mx-auto px-6 py-24">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="w-2 h-2 rounded-full bg-[#1fe08a] animate-pulse" />
+            <p className="uppercase tracking-[0.25em] text-[#1fe08a] text-xs font-semibold">
+              {t.insiders.kicker}
+            </p>
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-black mb-5 font-mono">{t.insiders.title}</h2>
+          <p className="text-[#c9f5df]/80 max-w-2xl text-lg leading-relaxed mb-14">
+            {t.insiders.subtitle}
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14">
+            {t.insiders.features.map((f, i) => {
+              const Icon = [TrendUpIcon, MicIcon, UsersIcon, LockIcon][i];
+              return (
+                <div
+                  key={f.title}
+                  className="bg-[#0f1613] border border-[#1fe08a]/20 rounded-2xl p-5 hover:border-[#1fe08a]/60 transition"
+                >
+                  <Icon className="w-7 h-7 text-[#1fe08a] mb-3" />
+                  <h3 className="font-bold mb-1">{f.title}</h3>
+                  <p className="text-sm text-[#c9f5df]/60 leading-snug">{f.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 bg-[#0f1613] border border-[#1fe08a]/30 rounded-2xl px-6 py-5">
+            <div className="flex items-center gap-2">
+              <AlertIcon className="w-5 h-5 text-[#1fe08a] shrink-0" />
+              <p className="font-semibold text-[#1fe08a]">{t.insiders.urgency}</p>
+            </div>
+            <a
+              href="#pricing"
+              className="sm:ml-auto inline-flex items-center justify-center rounded-full bg-[#1fe08a] text-[#070a08] font-bold px-6 py-2.5 text-sm hover:bg-[#3fffa8] transition shrink-0"
+            >
+              {t.insiders.cta}
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* showcase videos */}
       <section className="max-w-5xl mx-auto px-6 py-20">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">

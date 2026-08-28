@@ -105,6 +105,19 @@ export const dict = {
         },
       ],
     },
+    insiders: {
+      kicker: "Exclusivo dentro de Focus",
+      title: "Insiders — Memecoins",
+      subtitle: "La primera comunidad hispanohablante de memecoins con plataforma propia. Nada de grupos de Telegram con 5.000 personas gritando \"compra ya\".",
+      features: [
+        { title: "Runners en vivo", desc: "Feed automático de lo que está corriendo ahora, con datos reales." },
+        { title: "Salas de voz", desc: "Analiza monedas en directo con el resto de insiders." },
+        { title: "Ranking real", desc: "Se ve quién de verdad está dentro, con puntos e insignias." },
+        { title: "Acceso exclusivo", desc: "Zona separada del resto, solo para quien va en serio." },
+      ],
+      urgency: "El 1 de septiembre el precio sube a 49,99€.",
+      cta: "Entra antes de que suba",
+    },
     why: {
       title: "El sistema educativo tradicional te está frenando",
       body1: "Años en el colegio. Miles de euros en formación. Y al final — un sueldo que apenas cubre tus gastos.",
@@ -313,6 +326,19 @@ export const dict = {
           desc: "Monetize viral content for creators: cut, edit, and distribute clips that generate real income.",
         },
       ],
+    },
+    insiders: {
+      kicker: "Exclusive inside Focus",
+      title: "Insiders — Memecoins",
+      subtitle: "The first Spanish-speaking memecoins community with its own platform. Not another Telegram group with 5,000 people yelling \"buy now\".",
+      features: [
+        { title: "Live Runners", desc: "Automated feed of what's moving right now, real data." },
+        { title: "Voice rooms", desc: "Analyze coins live with the rest of the insiders." },
+        { title: "Real ranking", desc: "See who's actually in it, with points and badges." },
+        { title: "Exclusive access", desc: "A separate zone, only for those who are serious." },
+      ],
+      urgency: "On September 1st the price goes up to $49.99.",
+      cta: "Join before it goes up",
     },
     why: {
       title: "The traditional education system is holding you back",
