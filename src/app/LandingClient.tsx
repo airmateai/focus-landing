@@ -604,11 +604,11 @@ export default function LandingClient() {
                   {t.pricing.nextPrice}
                 </span>
                 <span className="text-[10px] font-bold uppercase tracking-wide text-white bg-red-500 px-2 py-0.5 rounded-full">
-                  −40%
+                  −98%
                 </span>
               </div>
               <div className="flex items-end justify-center gap-1 mb-4">
-                <span className="text-7xl font-black text-[#a9812f] tracking-tight">
+                <span className="text-8xl font-black text-[#a9812f] tracking-tight pulse-glow">
                   {t.pricing.price}
                 </span>
                 <span className="text-[#5c574c] mb-3 text-lg">{t.pricing.period}</span>
@@ -620,7 +620,7 @@ export default function LandingClient() {
               <p className="text-xs text-[#a49c8a] mb-8">{t.pricing.subCta}</p>
 
               <a
-                href="https://buy.stripe.com/6oU7sL31549S0AC0jv2Ry0m"
+                href="https://buy.stripe.com/aFa4gz6dh9uc3MO4zL2Ry0o?prefilled_promo_code=FOCUS1EURO"
                 className="inline-block bg-[#a9812f] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#8a691f] hover:scale-[1.02] transition-all shadow-lg w-full sm:w-auto pulse-glow"
               >
                 {t.pricing.cta} →
