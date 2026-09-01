@@ -599,14 +599,6 @@ export default function LandingClient() {
                 {t.pricing.kicker}
               </span>
 
-              <div className="flex items-baseline justify-center gap-2 mb-1">
-                <span className="text-lg text-[#a49c8a] line-through decoration-2">
-                  {t.pricing.nextPrice}
-                </span>
-                <span className="text-[10px] font-bold uppercase tracking-wide text-white bg-red-500 px-2 py-0.5 rounded-full">
-                  −98%
-                </span>
-              </div>
               <div className="flex items-end justify-center gap-1 mb-4">
                 <span className="text-8xl font-black text-[#a9812f] tracking-tight pulse-glow">
                   {t.pricing.price}
@@ -620,7 +612,7 @@ export default function LandingClient() {
               <p className="text-xs text-[#a49c8a] mb-8">{t.pricing.subCta}</p>
 
               <a
-                href="https://buy.stripe.com/aFa4gz6dh9uc3MO4zL2Ry0o?prefilled_promo_code=FOCUS1EURO"
+                href="https://buy.stripe.com/aFa4gz6dh9uc3MO4zL2Ry0o"
                 className="inline-block bg-[#a9812f] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#8a691f] hover:scale-[1.02] transition-all shadow-lg w-full sm:w-auto pulse-glow"
               >
                 {t.pricing.cta} →
