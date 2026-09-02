@@ -212,8 +212,8 @@ export const dict = {
     pricing: {
       kicker: "Precio de fundador",
       title: "Únete ahora, antes de que suba el precio",
-      price: "49,99€",
-      nextPrice: "49,99€",
+      price: "29,99€",
+      nextPrice: "29,99€",
       period: "/mes",
       warning: "El precio sube pronto. Quien entra ahora con precio de fundador lo mantiene para siempre.",
       cta: "Activar Focus",
@@ -436,8 +436,8 @@ export const dict = {
     pricing: {
       kicker: "Founder pricing",
       title: "Join now, before the price goes up",
-      price: "€49.99",
-      nextPrice: "€49.99",
+      price: "€29.99",
+      nextPrice: "€29.99",
       period: "/month",
       warning: "The price is going up soon. Whoever joins now at founder pricing keeps it forever.",
       cta: "Activate Focus",
