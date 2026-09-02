@@ -4,6 +4,7 @@ export const dict = {
   es: {
     nav: { pillars: "Módulos", pricing: "Precio", login: "Entrar", join: "Únete ahora" },
     urgency: "El precio sube pronto. Asegura tu plaza al precio actual.",
+    tradingBanner: "Nuevo — Clases de Trading + señales en vivo de Fernando, con 88% de acierto",
     ticker: [
       "122 miembros ya dentro de Focus",
       "El precio sube pronto — asegura tu plaza",
@@ -228,6 +229,7 @@ export const dict = {
   en: {
     nav: { pillars: "Modules", pricing: "Pricing", login: "Log in", join: "Join now" },
     urgency: "Price is going up soon. Lock in today's price.",
+    tradingBanner: "New — Trading classes + live signals from Fernando, 88% win rate",
     ticker: [
       "122 members already inside Focus",
       "Price going up soon — lock in your spot",

@@ -211,6 +211,19 @@ export default function LandingClient() {
         </div>
       </section>
 
+      {/* trading banner */}
+      <a
+        href="#pricing"
+        className="block bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 transition"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
+          <span className="inline-flex items-center gap-1.5 text-white font-black text-sm sm:text-base">
+            <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+            {t.tradingBanner}
+          </span>
+        </div>
+      </a>
+
       {/* mindset video */}
       <section className="relative bg-[#100e0a] text-white overflow-hidden">
         <div
