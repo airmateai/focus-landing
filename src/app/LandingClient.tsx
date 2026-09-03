@@ -625,7 +625,7 @@ export default function LandingClient() {
               <p className="text-xs text-[#a49c8a] mb-8">{t.pricing.subCta}</p>
 
               <a
-                href="https://buy.stripe.com/aFa4gz6dh9uc3MO4zL2Ry0o?prefilled_promo_code=FOCUS1EURO"
+                href="https://buy.stripe.com/00w6oHbxBeOw5UWd6h2Ry0r?prefilled_promo_code=FOCUS1EURO"
                 className="inline-block bg-[#a9812f] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#8a691f] hover:scale-[1.02] transition-all shadow-lg w-full sm:w-auto pulse-glow"
               >
                 {t.pricing.cta} →
