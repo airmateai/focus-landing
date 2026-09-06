@@ -86,7 +86,7 @@ function UsersIcon({ className = "" }: { className?: string }) {
 
 export default function LandingClient() {
   const [locale, setLocale] = useState<Locale>("es");
-  const [memberCount, setMemberCount] = useState(122);
+  const [memberCount, setMemberCount] = useState(480);
   const t = dict[locale];
 
   useEffect(() => {
