@@ -163,6 +163,12 @@ export default function LandingClient() {
               {locale === "es" ? "EN" : "ES"}
             </button>
             <a
+              href="https://app.thefocus.world/login"
+              className="border border-[#a9812f]/40 text-[#8a691f] text-sm font-bold px-4 py-2 rounded-md hover:bg-[#a9812f]/10 transition"
+            >
+              {t.nav.login}
+            </a>
+            <a
               href="#pricing"
               className="bg-[#a9812f] text-white text-sm font-bold px-5 py-2 rounded-md hover:bg-[#8a691f] transition"
             >
