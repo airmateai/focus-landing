@@ -95,7 +95,7 @@ export default function LandingClient() {
     analyticsClient
       .rpc("member_count")
       .then(({ data }) => {
-        if (typeof data === "number" && data > 0) setMemberCount(data);
+        if (typeof data === "number" && data > 480) setMemberCount(data);
       });
     return () => {
       channel.unsubscribe();
