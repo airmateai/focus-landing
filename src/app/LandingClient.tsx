@@ -238,7 +238,14 @@ export default function LandingClient() {
               {t.freeClass.kicker}
             </p>
             <h2 className="text-xl sm:text-2xl font-black mb-1">{t.freeClass.title}</h2>
-            <p className="text-[#5c574c] text-sm max-w-md">{t.freeClass.desc}</p>
+            <p className="text-[#5c574c] text-sm max-w-md mb-2">{t.freeClass.desc}</p>
+            <p className="inline-flex items-center gap-1.5 text-[#8a691f] text-xs font-bold">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a9812f] opacity-75" />
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#a9812f]" />
+              </span>
+              {t.freeClass.social}
+            </p>
           </div>
           <a
             href="/clase-gratis"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import focusLogo from "../../../public/focus-logo.png";
+import Countdown from "./Countdown";
 
 export const metadata = { title: "Clase gratuita de Dropshipping — Focus" };
 
@@ -34,7 +35,7 @@ export default function ClaseGratisPage() {
           ← Focus
         </a>
 
-        <div className="text-center mt-8 mb-12">
+        <div className="text-center mt-8 mb-8">
           <Image src={focusLogo} alt="Focus" className="w-full max-w-xs h-auto mx-auto mb-6" />
           <p className="uppercase tracking-[0.25em] text-[#8a691f] text-xs sm:text-sm font-semibold mb-3">
             Clase gratuita
@@ -42,11 +43,22 @@ export default function ClaseGratisPage() {
           <h1 className="text-2xl sm:text-4xl font-black leading-tight mb-4 text-balance">
             Las 4 primeras lecciones de Dropshipping, gratis
           </h1>
-          <p className="text-[#5c574c] max-w-xl mx-auto">
+          <p className="text-[#5c574c] max-w-xl mx-auto mb-4">
             Sin registrarte, sin pagar nada. Esto es una muestra real del módulo completo — dentro de
             Focus hay 4 lecciones más y el resto de la plataforma (IA, marketing, mentalidad, trading,
             memecoins).
           </p>
+          <div className="inline-flex items-center gap-2 bg-[#a9812f]/10 text-[#8a691f] text-xs sm:text-sm font-bold px-4 py-2 rounded-full">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a9812f] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#a9812f]" />
+            </span>
+            482 alumnos ya la han visto y están aplicándolo
+          </div>
+        </div>
+
+        <div className="mb-12 bg-[#100e0a] rounded-2xl px-6 py-8">
+          <Countdown />
         </div>
 
         <div className="space-y-10">

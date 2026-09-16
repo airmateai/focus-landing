@@ -9,6 +9,7 @@ export const dict = {
       kicker: "Prueba antes de pagar",
       title: "Clase gratuita de Dropshipping",
       desc: "Las 4 primeras lecciones del módulo completo, sin pagar nada. Así ves cómo enseñamos antes de unirte.",
+      social: "482 alumnos ya la han visto y están aplicándolo",
       cta: "Ver clase gratis",
     },
     ticker: [
@@ -240,6 +241,7 @@ export const dict = {
       kicker: "Try before you pay",
       title: "Free Dropshipping class",
       desc: "The first 4 lessons of the full module, at no cost. See how we teach before you join.",
+      social: "482 students have already watched it and are applying it",
       cta: "Watch free class",
     },
     ticker: [
