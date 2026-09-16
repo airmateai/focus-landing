@@ -230,6 +230,25 @@ export default function LandingClient() {
         </div>
       </a>
 
+      {/* free class */}
+      <section className="bg-[#f4f1ea] border-y border-[#e2ddd3]">
+        <div className="max-w-4xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+          <div>
+            <p className="uppercase tracking-[0.2em] text-[#8a691f] text-xs font-semibold mb-2">
+              {t.freeClass.kicker}
+            </p>
+            <h2 className="text-xl sm:text-2xl font-black mb-1">{t.freeClass.title}</h2>
+            <p className="text-[#5c574c] text-sm max-w-md">{t.freeClass.desc}</p>
+          </div>
+          <a
+            href="/clase-gratis"
+            className="shrink-0 bg-[#a9812f] text-white font-bold px-7 py-3.5 rounded-md hover:bg-[#8a691f] transition"
+          >
+            {t.freeClass.cta}
+          </a>
+        </div>
+      </section>
+
       {/* mindset video */}
       <section className="relative bg-[#100e0a] text-white overflow-hidden">
         <div
