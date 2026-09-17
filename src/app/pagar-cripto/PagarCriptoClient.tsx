@@ -6,9 +6,12 @@ import {
   PublicKey,
   SystemProgram,
   Transaction,
-  clusterApiUrl,
 } from "@solana/web3.js";
 
+// El RPC público oficial (api.mainnet-beta.solana.com) bloquea peticiones
+// directas desde el navegador (403). publicnode sí admite CORS desde el
+// cliente sin necesitar API key.
+const RPC_ENDPOINT = "https://solana.publicnode.com";
 const RECIPIENT = "6c1A14rMMfAGtKAeCojWCkbFiPu5YNmmvbKcNTZw9bfu";
 const LAMPORTS_PER_SOL = 1_000_000_000;
 
@@ -82,7 +85,7 @@ export default function PagarCriptoClient() {
     setSending(true);
     setStatus("Preparando transacción...");
     try {
-      const connection = new Connection(clusterApiUrl("mainnet-beta"), "confirmed");
+      const connection = new Connection(RPC_ENDPOINT, "confirmed");
       const fromPubkey = new PublicKey(address);
       const toPubkey = new PublicKey(RECIPIENT);
 
