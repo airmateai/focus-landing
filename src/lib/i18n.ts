@@ -226,6 +226,7 @@ export const dict = {
       period: "/mes",
       warning: "El precio sube pronto — quien entra ahora con precio de fundador lo mantiene para siempre.",
       cta: "Únete a Focus",
+      ctaCrypto: "O paga con cripto",
       subCta: "Cancela cuando quieras. Sin permanencia.",
     },
     finalCta: {
@@ -459,6 +460,7 @@ export const dict = {
       period: "/mo",
       warning: "The price is going up soon — whoever joins now at founder pricing keeps it forever.",
       cta: "Join Focus",
+      ctaCrypto: "Or pay with crypto",
       subCta: "Cancel anytime. No commitment.",
     },
     finalCta: {

@@ -669,6 +669,12 @@ export default function LandingClient() {
               >
                 {t.pricing.cta} →
               </a>
+              <a
+                href="/pagar-cripto-focus"
+                className="block mt-4 text-sm font-semibold text-[#8a691f] underline underline-offset-4 hover:text-[#6d541f] transition"
+              >
+                {t.pricing.ctaCrypto}
+              </a>
             </div>
           </div>
         </div>
