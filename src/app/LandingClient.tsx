@@ -474,7 +474,7 @@ export default function LandingClient() {
             </div>
             <div className="sm:ml-auto flex gap-2 shrink-0">
               <a
-                href="/pagar-cripto"
+                href="/pagar-cripto-focus"
                 className="inline-flex items-center justify-center rounded-full border border-[#1fe08a] text-[#1fe08a] font-bold px-6 py-2.5 text-sm hover:bg-[#1fe08a]/10 transition"
               >
                 {t.insiders.ctaCrypto}
