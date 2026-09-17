@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Connection,
   PublicKey,
@@ -16,8 +16,8 @@ const RECIPIENT = "6c1A14rMMfAGtKAeCojWCkbFiPu5YNmmvbKcNTZw9bfu";
 const LAMPORTS_PER_SOL = 1_000_000_000;
 
 const PLANS = [
-  { id: "full", label: "Pago único", eur: 450, solEstimate: "2.2" },
-  { id: "half", label: "1 de 2 pagos", eur: 250, solEstimate: "1.2" },
+  { id: "full", label: "Pago único", eur: 450 },
+  { id: "half", label: "1 de 2 pagos", eur: 250 },
 ] as const;
 
 type PhantomProvider = {
@@ -37,11 +37,37 @@ export default function PagarCriptoClient() {
   const [address, setAddress] = useState<string | null>(null);
   const [connecting, setConnecting] = useState(false);
   const [plan, setPlan] = useState<(typeof PLANS)[number]>(PLANS[0]);
-  const [solAmount, setSolAmount] = useState<string>(PLANS[0].solEstimate);
+  const [solPriceEur, setSolPriceEur] = useState<number | null>(null);
+  const [priceError, setPriceError] = useState<string | null>(null);
+  const [solAmount, setSolAmount] = useState<string>("");
   const [status, setStatus] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
   const [txSig, setTxSig] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=eur")
+      .then((r) => r.json())
+      .then((d) => {
+        if (cancelled) return;
+        const price = d?.solana?.eur;
+        if (typeof price === "number") {
+          setSolPriceEur(price);
+          setSolAmount((PLANS[0].eur / price).toFixed(4));
+        } else {
+          setPriceError("No se pudo obtener el precio de SOL en directo. Introduce la cantidad tú mismo.");
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setPriceError("No se pudo obtener el precio de SOL en directo. Introduce la cantidad tú mismo.");
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   async function connectWallet() {
     setError(null);
@@ -63,7 +89,7 @@ export default function PagarCriptoClient() {
 
   function selectPlan(p: (typeof PLANS)[number]) {
     setPlan(p);
-    setSolAmount(p.solEstimate);
+    if (solPriceEur) setSolAmount((p.eur / solPriceEur).toFixed(4));
     setTxSig(null);
     setError(null);
   }
@@ -103,6 +129,24 @@ export default function PagarCriptoClient() {
 
       setStatus("Confirma la transacción en Phantom...");
       const { signature } = await provider.signAndSendTransaction(tx);
+
+      setStatus("Confirmando en la red...");
+      const { lastValidBlockHeight } = await connection.getLatestBlockhash();
+      const confirmation = await connection.confirmTransaction(
+        { signature, blockhash: tx.recentBlockhash!, lastValidBlockHeight },
+        "confirmed",
+      );
+
+      if (confirmation.value.err) {
+        setError(
+          "La transacción falló en la red (revisa que tengas saldo suficiente, incluyendo la comisión). " +
+            JSON.stringify(confirmation.value.err),
+        );
+        setTxSig(signature);
+        setStatus(null);
+        return;
+      }
+
       setTxSig(signature);
       setStatus(null);
     } catch (e) {
@@ -159,8 +203,12 @@ export default function PagarCriptoClient() {
 
               <div className="text-left">
                 <label className="block text-xs font-semibold text-[#8a8478] mb-1.5">
-                  Cantidad en SOL (revisa el precio actual antes de confirmar)
+                  Cantidad en SOL
+                  {solPriceEur && (
+                    <span className="font-normal text-[#a49c8a]"> · 1 SOL ≈ {solPriceEur.toFixed(2)}€ ahora mismo</span>
+                  )}
                 </label>
+                {priceError && <p className="text-xs text-red-600 mb-1.5">{priceError}</p>}
                 <input
                   value={solAmount}
                   onChange={(e) => setSolAmount(e.target.value)}
@@ -179,10 +227,27 @@ export default function PagarCriptoClient() {
           )}
 
           {status && <p className="text-sm text-[#8a691f] mt-4">{status}</p>}
-          {error && <p className="text-sm text-red-600 mt-4">{error}</p>}
-          {txSig && (
+          {error && (
+            <div className="text-sm text-red-600 mt-4">
+              {error}
+              {txSig && (
+                <>
+                  {" "}
+                  <a
+                    href={`https://solscan.io/tx/${txSig}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    Ver detalle en Solscan
+                  </a>
+                </>
+              )}
+            </div>
+          )}
+          {txSig && !error && (
             <div className="mt-4 text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg p-3">
-              ✓ Pago enviado.{" "}
+              ✓ Pago confirmado en la red.{" "}
               <a
                 href={`https://solscan.io/tx/${txSig}`}
                 target="_blank"
