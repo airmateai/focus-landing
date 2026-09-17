@@ -472,12 +472,20 @@ export default function LandingClient() {
               <AlertIcon className="w-5 h-5 text-[#1fe08a] shrink-0" />
               <p className="font-semibold text-[#1fe08a]">{t.insiders.urgency}</p>
             </div>
-            <a
-              href="#pricing"
-              className="sm:ml-auto inline-flex items-center justify-center rounded-full bg-[#1fe08a] text-[#070a08] font-bold px-6 py-2.5 text-sm hover:bg-[#3fffa8] transition shrink-0"
-            >
-              {t.insiders.cta}
-            </a>
+            <div className="sm:ml-auto flex gap-2 shrink-0">
+              <a
+                href="/pagar-cripto"
+                className="inline-flex items-center justify-center rounded-full border border-[#1fe08a] text-[#1fe08a] font-bold px-6 py-2.5 text-sm hover:bg-[#1fe08a]/10 transition"
+              >
+                {t.insiders.ctaCrypto}
+              </a>
+              <a
+                href="#pricing"
+                className="inline-flex items-center justify-center rounded-full bg-[#1fe08a] text-[#070a08] font-bold px-6 py-2.5 text-sm hover:bg-[#3fffa8] transition"
+              >
+                {t.insiders.cta}
+              </a>
+            </div>
           </div>
         </div>
       </section>
