@@ -123,7 +123,7 @@ export default function PagarCriptoClient() {
         }),
       );
 
-      const { blockhash } = await connection.getLatestBlockhash();
+      const { blockhash, lastValidBlockHeight } = await connection.getLatestBlockhash();
       tx.recentBlockhash = blockhash;
       tx.feePayer = fromPubkey;
 
@@ -131,9 +131,8 @@ export default function PagarCriptoClient() {
       const { signature } = await provider.signAndSendTransaction(tx);
 
       setStatus("Confirmando en la red...");
-      const { lastValidBlockHeight } = await connection.getLatestBlockhash();
       const confirmation = await connection.confirmTransaction(
-        { signature, blockhash: tx.recentBlockhash!, lastValidBlockHeight },
+        { signature, blockhash, lastValidBlockHeight },
         "confirmed",
       );
 
