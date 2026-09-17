@@ -659,10 +659,9 @@ export default function LandingClient() {
                 <span className="text-[#5c574c] mb-3 text-lg">{t.pricing.period}</span>
               </div>
 
-              <p className="text-sm text-[#3a362e] font-medium mb-1 max-w-sm mx-auto">
+              <p className="text-sm text-[#3a362e] font-medium mb-8 max-w-sm mx-auto">
                 {t.pricing.warning}
               </p>
-              <p className="text-xs text-[#a49c8a] mb-8">{t.pricing.subCta}</p>
 
               <a
                 href="https://buy.stripe.com/7sYdR959dcGo2IKd6h2Ry0z"
