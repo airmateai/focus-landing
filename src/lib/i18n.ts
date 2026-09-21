@@ -5,6 +5,7 @@ export const dict = {
     nav: { pillars: "Módulos", pricing: "Precio", login: "Entrar", join: "Únete ahora" },
     urgency: "El precio sube pronto. Asegura tu plaza al precio actual.",
     tradingBanner: "Nuevo — Clases de Trading + señales en vivo de Fernando, con 88% de acierto",
+    whatsappBanner: "Únete a nuestro WhatsApp — más de 500 personas ya dentro",
     freeClass: {
       kicker: "Prueba antes de pagar",
       title: "Clase gratuita de Dropshipping",
@@ -239,6 +240,7 @@ export const dict = {
     nav: { pillars: "Modules", pricing: "Pricing", login: "Log in", join: "Join now" },
     urgency: "Price is going up soon. Lock in today's price.",
     tradingBanner: "New — Trading classes + live signals from Fernando, 88% win rate",
+    whatsappBanner: "Join our WhatsApp — 500+ people already in",
     freeClass: {
       kicker: "Try before you pay",
       title: "Free Dropshipping class",
