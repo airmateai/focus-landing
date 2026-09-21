@@ -727,6 +727,48 @@ export default function LandingClient() {
           In proud honor to the Tates
         </p>
         <p className="text-[#a49c8a] text-xs">{t.footer}</p>
+        <div className="flex items-center justify-center gap-5 py-1">
+          <a
+            href="https://chat.whatsapp.com/C3TA0R8fL9S6n6XQoJhqRX?mode=gi_t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://discord.gg/SxfhQSVAu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
+          >
+            Discord
+          </a>
+          <a
+            href="https://x.com/thefocusworld"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
+          >
+            X
+          </a>
+          <a
+            href="https://t.me/+l_YEu-hgaxplYmQ0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
+          >
+            Telegram
+          </a>
+          <a
+            href="https://www.instagram.com/thefocuswrld"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
+          >
+            Instagram
+          </a>
+        </div>
         <p className="text-[#a49c8a] text-xs">
           <a href="/terminos" className="hover:text-[#8a691f] underline">
             Términos
