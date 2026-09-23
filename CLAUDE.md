@@ -6,7 +6,7 @@ Landing page pública de Focus (repo separado de la plataforma principal `focus`
 Landing muy visual, inspirada en el estilo de therealworld.net, pero con la identidad de Focus: mármol blanco/gris + dorado, logo con el reloj integrado.
 
 ## Requisitos clave
-- **Precio de membresía:** 29,99€/mes. Incluir mensaje de urgencia visible indicando que el precio subirá pronto.
+- **Precio de membresía:** 10€ el primer mes, luego 49,99€/mes (Stripe: cupón `FOCUS10` prefijado en el payment link). Incluir mensaje de urgencia visible indicando que el precio subirá pronto.
 - **Idiomas:** español e inglés, con selector de idioma. Español como idioma por defecto.
 - **Imágenes:** placeholders por ahora — Fabio y Fernando subirán imágenes propias más adelante.
 - Logo disponible en `public/focus-logo.png`.

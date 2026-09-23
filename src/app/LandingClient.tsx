@@ -676,13 +676,16 @@ export default function LandingClient() {
                 </span>
                 <span className="text-[#5c574c] mb-3 text-lg">{t.pricing.period}</span>
               </div>
+              <p className="text-lg font-semibold text-[#3a362e] -mt-2 mb-4">
+                {t.pricing.afterPrice}
+              </p>
 
               <p className="text-sm text-[#3a362e] font-medium mb-8 max-w-sm mx-auto">
                 {t.pricing.warning}
               </p>
 
               <a
-                href="https://buy.stripe.com/7sYdR959dcGo2IKd6h2Ry0z"
+                href="https://buy.stripe.com/dRmfZhatxdKsdnofep2Ry0A?prefilled_promo_code=FOCUS10"
                 className="inline-block bg-[#a9812f] text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-[#8a691f] hover:scale-[1.02] transition-all shadow-lg w-full sm:w-auto pulse-glow"
               >
                 {t.pricing.cta} →
