@@ -676,10 +676,6 @@ export default function LandingClient() {
                 </span>
                 <span className="text-[#5c574c] mb-3 text-lg">{t.pricing.period}</span>
               </div>
-              <p className="text-lg font-semibold text-[#3a362e] -mt-2 mb-4">
-                {t.pricing.afterPrice}
-              </p>
-
               <p className="text-sm text-[#3a362e] font-medium mb-8 max-w-sm mx-auto">
                 {t.pricing.warning}
               </p>
