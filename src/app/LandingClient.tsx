@@ -219,7 +219,7 @@ export default function LandingClient() {
 
       {/* whatsapp banner */}
       <a
-        href="https://chat.whatsapp.com/C3TA0R8fL9S6n6XQoJhqRX?mode=gi_t"
+        href="https://chat.whatsapp.com/HpnChuOZcDS4w2v6iHcxo9?mode=gi_t"
         target="_blank"
         rel="noopener noreferrer"
         className="block bg-[#25D366] hover:bg-[#20bd5a] transition"
@@ -732,7 +732,7 @@ export default function LandingClient() {
         <p className="text-[#a49c8a] text-xs">{t.footer}</p>
         <div className="flex items-center justify-center gap-5 py-1">
           <a
-            href="https://chat.whatsapp.com/C3TA0R8fL9S6n6XQoJhqRX?mode=gi_t"
+            href="https://chat.whatsapp.com/HpnChuOZcDS4w2v6iHcxo9?mode=gi_t"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#a49c8a] hover:text-[#8a691f] text-xs font-semibold"
